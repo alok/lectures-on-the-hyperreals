@@ -1,1 +1,4 @@
 /.lake
+/_out
+!static/diagrams/*.jpg
+!docs/static/diagrams/*.jpg

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 390">
+  
+  <defs>
+    <linearGradient id="bgCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="goldBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <marker id="arrowSilver" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#cbd5e1"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="390" rx="20" fill="url(#bgCard)"/>
+  <text x="36" y="42" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Ultrapower Construction ℝ* = ℝ^ℕ / ℱ &amp; Łoś Index-wise Transfer</text>
+  <text x="36" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Free ultrafilter ℱ ⊇ cofinite sets acts as a 0–1 voting measure on subsets of ℕ without naming a dictator index</text>
+
+  <!-- Left: Sequence table over N -->
+  <rect x="36" y="88" width="450" height="270" rx="16" fill="#0b1220" stroke="#334155" stroke-width="1.2"/>
+  <text x="56" y="114" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="0.05em">REAL SEQUENCES IN ℝ^ℕ (INDEXED BY n ∈ ℕ)</text>
+
+  <text x="64" y="146" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="12">n     =</text>
+  <text x="140" y="146" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="12">0     1      2      3      4     5    ⋯</text>
+
+  <!-- Sequence omega = (0,1,2,3,...) -->
+  <rect x="52" y="162" width="418" height="38" rx="9" fill="#f87171" fill-opacity="0.11" stroke="#f87171" stroke-opacity="0.4"/>
+  <text x="64" y="186" fill="#fca5a5" font-family="ui-monospace, monospace" font-size="13" font-weight="700">ω_n   =</text>
+  <text x="140" y="186" fill="#fecaca" font-family="ui-monospace, monospace" font-size="13">0     1      2      3      4     5    → +∞</text>
+
+  <!-- Sequence eps = (1, 1/2, 1/3, ...) -->
+  <rect x="52" y="212" width="418" height="38" rx="9" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.45"/>
+  <text x="64" y="236" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="13" font-weight="700">ε_n   =</text>
+  <text x="140" y="236" fill="#bae6fd" font-family="ui-monospace, monospace" font-size="13">1    1/2    1/3    1/4    1/5   1/6   → 0⁺</text>
+
+  <!-- Alternating sequence (1, 0, 1, 0, ...) -->
+  <rect x="52" y="262" width="418" height="38" rx="9" fill="#a78bfa" fill-opacity="0.12" stroke="#a78bfa" stroke-opacity="0.45"/>
+  <text x="64" y="286" fill="#ddd6fe" font-family="ui-monospace, monospace" font-size="13" font-weight="700">a_n   =</text>
+  <text x="140" y="286" fill="#ede9fe" font-family="ui-monospace, monospace" font-size="13">1     0      1      0      1     0    (2ℕ vs 2ℕ+1)</text>
+
+  <text x="64" y="334" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="12">⟦ [r] &lt; [s] ⟧  ⟺  &#123; n ∈ ℕ : r_n &lt; s_n &#125; ∈ ℱ</text>
+
+  <!-- Center: Ultrafilter Lens -->
+  <ellipse cx="585" cy="223" rx="52" ry="118" fill="url(#goldBeam)" stroke="#fbbf24" stroke-width="2"/>
+  <text x="585" y="148" text-anchor="middle" fill="#fde68a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Free</text>
+  <text x="585" y="166" text-anchor="middle" fill="#fde68a" font-family="system-ui, sans-serif" font-size="13" font-weight="700">Ultrafilter</text>
+  <text x="585" y="196" text-anchor="middle" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="22" font-weight="700">ℱ</text>
+  <text x="585" y="230" text-anchor="middle" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="11">A ∈ ℱ or Aᶜ ∈ ℱ</text>
+  <text x="585" y="250" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="11">finite ∉ ℱ</text>
+  <text x="585" y="270" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="11">(Zorn's Lemma)</text>
+
+  <!-- Arrows through lens to germs in R* -->
+  <path d="M 472 181 C 530 181, 640 148, 696 142" fill="none" stroke="#f87171" stroke-width="2.4" marker-end="url(#arrowSilver)"/>
+  <path d="M 472 231 C 530 231, 640 223, 696 223" fill="none" stroke="#38bdf8" stroke-width="2.4" marker-end="url(#arrowCyan)"/>
+  <path d="M 472 281 C 530 281, 640 296, 696 304" fill="none" stroke="#a78bfa" stroke-width="2.4" marker-end="url(#arrowGold)"/>
+
+  <!-- Right: Resulting Germs in R* -->
+  <rect x="698" y="88" width="186" height="270" rx="16" fill="#0b1220" stroke="#334155" stroke-width="1.2"/>
+  <text x="791" y="114" text-anchor="middle" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">GERMS IN ℝ*</text>
+
+  <rect x="716" y="124" width="150" height="52" rx="10" fill="#ef4444" fill-opacity="0.14" stroke="#f87171"/>
+  <text x="791" y="146" text-anchor="middle" fill="#fecaca" font-family="ui-monospace, monospace" font-size="13" font-weight="700">ω = [n] &gt; ℝ</text>
+  <text x="791" y="165" text-anchor="middle" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="11">Positive unlimited</text>
+
+  <rect x="716" y="196" width="150" height="54" rx="10" fill="#38bdf8" fill-opacity="0.14" stroke="#38bdf8"/>
+  <text x="791" y="218" text-anchor="middle" fill="#bae6fd" font-family="ui-monospace, monospace" font-size="13" font-weight="700">ε = [1/n] ∈ 𝕀</text>
+  <text x="791" y="238" text-anchor="middle" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="11">0 &lt; ε &lt; r (∀ r &gt; 0)</text>
+
+  <rect x="716" y="272" width="150" height="66" rx="10" fill="#fbbf24" fill-opacity="0.12" stroke="#fbbf24"/>
+  <text x="791" y="294" text-anchor="middle" fill="#fde68a" font-family="ui-monospace, monospace" font-size="13" font-weight="700">[a] = 1 or 0</text>
+  <text x="791" y="313" text-anchor="middle" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">No zero divisors!</text>
+  <text x="791" y="328" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="10">a·(1−a) = 0 ⟹ ℝ* field</text>
+</svg>

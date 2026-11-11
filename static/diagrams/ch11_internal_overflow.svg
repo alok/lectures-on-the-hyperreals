@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380">
+  
+  <defs>
+    <linearGradient id="bgCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="goldBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <marker id="arrowSilver" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#cbd5e1"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="380" rx="20" fill="url(#bgCard)"/>
+  <text x="36" y="42" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Internal vs. External Entities — Overflow, Underflow &amp; ℵ₁-Saturation</text>
+  <text x="36" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Because ℝ, ℕ, 𝕃, and 𝕀 have no least upper bounds in ℝ*, no internal set can stop cleanly at their boundary</text>
+
+  <!-- Overflow / Underflow diagram -->
+  <rect x="36" y="92" width="848" height="142" rx="16" fill="#0b1220" stroke="#334155"/>
+  <text x="56" y="118" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="12" font-weight="700">OVERFLOW ACROSS THE EXTERNAL GALAXY BOUNDARY ℕ ⊂ *ℕ</text>
+
+  <!-- Finite segment N -->
+  <rect x="64" y="142" width="330" height="44" rx="10" fill="#38bdf8" fill-opacity="0.14" stroke="#38bdf8" stroke-dasharray="5 3"/>
+  <text x="229" y="169" text-anchor="middle" fill="#bae6fd" font-family="ui-monospace, monospace" font-size="13">External ℕ = &#123; 0, 1, 2, 3, … &#125; (no max!)</text>
+
+  <!-- Fuzzy gap -->
+  <line x1="414" y1="132" x2="414" y2="202" stroke="#f87171" stroke-width="2" stroke-dasharray="4 4"/>
+  <text x="414" y="218" text-anchor="middle" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="11" font-weight="700">External Cut (invisible to internal sets)</text>
+
+  <!-- Infinite segment *N_inf -->
+  <rect x="434" y="142" width="420" height="44" rx="10" fill="#10b981" fill-opacity="0.12" stroke="#34d399" stroke-dasharray="5 3"/>
+  <text x="644" y="169" text-anchor="middle" fill="#a7f3d0" font-family="ui-monospace, monospace" font-size="13">External *ℕ_∞ = *ℕ \ ℕ (no min!)</text>
+
+  <!-- Internal set A spilling across -->
+  <path d="M 64 136 L 566 136 L 566 192 L 64 192 Z" fill="none" stroke="#fbbf24" stroke-width="2.6"/>
+  <circle cx="566" cy="164" r="6" fill="#fbbf24"/>
+  <text x="566" y="126" text-anchor="middle" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12" font-weight="700">Internal A ⊇ ℕ ⟹ ∃ K ∈ *ℕ_∞, &#123;0..K&#125; ⊆ A</text>
+
+  <!-- Bottom 2 cards: Saturation & Hyperfinite Sets -->
+  <rect x="36" y="250" width="414" height="104" rx="14" fill="#0b1220" stroke="#818cf8" stroke-opacity="0.6"/>
+  <text x="56" y="276" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">COUNTABLE SATURATION (CANTOR INTERSECTION)</text>
+  <text x="56" y="302" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="13">A₀ ⊇ A₁ ⊇ A₂ ⊇ ⋯ (nonempty internal)</text>
+  <text x="56" y="328" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="13">⟹  ⋂_&#123;k ∈ ℕ&#125; A_k ≠ ∅  (diagonal witness!)</text>
+
+  <rect x="470" y="250" width="414" height="104" rx="14" fill="#0b1220" stroke="#34d399" stroke-opacity="0.6"/>
+  <text x="490" y="276" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" font-weight="700">HYPERFINITE SETS &amp; PIGEONHOLE PRINCIPLE</text>
+  <text x="490" y="302" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="13">Internal bijection f : &#123;1..N&#125; ↔ A  (N ∈ *ℕ)</text>
+  <text x="490" y="328" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="13">No internal proper subset of A embeds A!</text>
+</svg>
