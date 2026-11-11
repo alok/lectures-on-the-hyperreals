@@ -10,7 +10,7 @@ Every mathematical chapter of the book (**Parts I–V, Chapters 1–19**) is for
 
 ## Interactive Verso Book & Spatial 3D Edition (iPhone & Apple Vision Pro)
 
-- **Read Online**: **[https://alok.github.io/lectures-on-the-hyperreals/](https://alok.github.io/lectures-on-the-hyperreals/)**
+- **Read Online**: **[https://alok.blog/lectures-on-the-hyperreals/](https://alok.blog/lectures-on-the-hyperreals/)** *(GitHub Pages: `alok.github.io/lectures-on-the-hyperreals/`)*
 
 An interactive, illustrated **Verso** (`Verso.Genre.Manual`) companion book spanning all 5 Parts and 20 Chapters, crafted for effortless reading on **iPhone** and **Apple Vision Pro**:
 
