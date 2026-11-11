@@ -8,6 +8,27 @@ Every mathematical chapter of the book (**Parts I–V, Chapters 1–19**) is for
 
 ---
 
+## Interactive Verso Book & Spatial 3D Edition (iPhone & Apple Vision Pro)
+
+- **Read Online**: **[https://alok.github.io/lectures-on-the-hyperreals/](https://alok.github.io/lectures-on-the-hyperreals/)**
+
+An interactive, illustrated **Verso** (`Verso.Genre.Manual`) companion book spanning all 5 Parts and 20 Chapters, crafted for effortless reading on **iPhone** and **Apple Vision Pro**:
+
+- **Live-Elaborated Lean 4 + SubVerso Signatures**: Every chapter imports `LecturesOnTheHyperreals` directly so `#check` blocks and examples elaborate against the real kernel declarations—tap or hover any symbol to inspect its full Lean 4 type signature and documentation inline.
+- **Native Stereoscopic 3D Inline on Apple Vision Pro**: Five custom mathematical 3D sculptures (`static/models/*.usdz`, strict RealityKit-validated via `usdchecker --arkit --strict`) render natively inside the page via visionOS Safari's `<model stagemode="orbit" interactive="interactive">` portal so you see genuine stereoscopic 3D depth right as you scroll, with automatic WebGL `<model-viewer>` + one-tap iOS AR Quick Look fallback (`*.glb` + `*.usdz`) on iPhone, iPad, and Mac.
+- **Custom Mathematical Diagrams & Editorial Art**: Painted observatory cover art (`static/diagrams/hero_observatory.jpg`), custom site emblem (`static/logo.svg`), and 8 vector mathematical diagrams (`static/diagrams/*.svg`) illustrating Keisler's infinitesimal microscope, free ultrafilter voting, the Incremental Equation, halo topology, overflow/saturation, Zakon superstructures, Loeb measure, and the Part V applications quartet.
+- **Mobile & Spatial Ergonomics**: Charter / Apple New York serif prose, zero horizontal overflow on narrow phone viewports, safe-area insets, full-width Prev/Next chapter cards, and persisted **Auto / Dark / Light** + **A− / A+** reader controls.
+
+```bash
+# Regenerate all 5 USDZ/GLB 3D sculptures and 9 SVG illustrations
+uv run --with numpy --with trimesh --with scipy --with networkx python scripts/generate_assets.py
+
+# Build the multi-page interactive Verso website into _out/html-multi/ (published via docs/)
+lake exe generate-book
+```
+
+---
+
 ## Key Metrics & Kernel Verification
 
 | Metric | Value |

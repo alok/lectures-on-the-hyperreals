@@ -1,0 +1,624 @@
+{"99":
+ "<code>Membership.mem.{u, v} {α : outParam (Type u)} {γ : Type v} [self : Membership α γ] : γ → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">The membership relation `a ∈ s : Prop` where `a : α`, `s : γ`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `∈` in identifiers is `mem`.</code>",
+ "98":
+ "<code>Set.Icc.{u_1} {α : Type u_1} [Preorder α] (a b : α) : Set α</code><span class=\"sep\"></span><code class=\"docstring\">`Icc a b` is the left-closed right-closed interval $[a, b]$. </code>",
+ "97":
+ "<code>ContinuousOn.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X] [TopologicalSpace Y] (f : X → Y)\n  (s : Set X) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function between topological spaces is continuous on a subset `s`\nwhen it's continuous at every point of `s` within `s`. </code>",
+ "96": "<code>ℝ → ℝ</code>",
+ "95":
+ "<code>Goldblatt.Ch07.intermediate_value_Icc_nonstandard {f : ℝ → ℝ} {a b d : ℝ} (hab : a ≤ b)\n  (hf : ContinuousOn f (Set.Icc a b)) (hd : d ∈ Set.Icc (min (f a) (f b)) (max (f a) (f b))) :\n  ∃ c ∈ Set.Icc a b, f c = d</code><span class=\"sep\"></span><code class=\"docstring\">Closed-interval **Intermediate Value Theorem** (`d` between `f a` and `f b` inclusive). </code>",
+ "94":
+ "<code>Irrational (x : ℝ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A real number is irrational if it is not equal to any rational number. </code>",
+ "93":
+ "<code>Goldblatt.Ch07.thomaeFunction (x : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Exercise 7.4(3), function `f₅` (p. 79): Thomae's ruler function (`1/n` if `x = m/n ∈ ℚ`\nin lowest terms with `n ≥ 1`, and `0` if `x` is irrational). </code>",
+ "92":
+ "<code>ContinuousAt.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X] [TopologicalSpace Y] (f : X → Y) (x : X) :\n  Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function between topological spaces is continuous at a point `x₀`\nif `f x` tends to `f x₀` when `x` tends to `x₀`. </code>",
+ "91":
+ "<code>Goldblatt.Ch07.continuousAt_thomaeFunction_iff {c : ℝ} : ContinuousAt thomaeFunction c ↔ Irrational c</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Exercise 7.4(3) `f₅` (p. 79): **Thomae's ruler function is continuous at `c` if and\nonly if `c` is irrational!**\nNonstandard proof: if `c` is irrational and `m/n ≈ₕ c` with `m ∈ ℤ*`, `n ∈ ℕ*`, then `n` cannot be\nstandard (else `m = (m/n) * n` would be a limited hyperinteger hence standard, making `c = m/n ∈ ℚ`),\nso `n` is unlimited and `*f₅(m/n) = 1/n ≈ₕ 0 = f₅(c)`! </code>",
+ "90":
+ "<code>Goldblatt.IsUnlimitedNat (N : ℕ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §5.1 (p. 50): `N ∈ ℕ*` is unlimited (`N ∈ *ℕ_∞`) if `n &lt; N` for every standard `n ∈ ℕ`. </code>",
+ "9":
+ "<code>IsStrictOrderedRing.{u_1} (R : Type u_1) [Semiring R] [PartialOrder R] : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A strict ordered semiring is a nontrivial semiring with a partial order such that addition is\nstrictly monotone and multiplication by a positive number is strictly monotone. </code>",
+ "89":
+ "<code>Goldblatt.Ch06.isUnlimitedNat_add_right {M : ℕ*} (hM : IsUnlimitedNat M) (K : ℕ*) : IsUnlimitedNat (M + K)</code><span class=\"sep\"></span><code class=\"docstring\">Adding any hypernatural `K` to an unlimited hypernatural `M` yields an unlimited hypernatural. </code>",
+ "88":
+ "<code>Goldblatt.Ch06.starSeq_le_coe_of_forall_le {s : ℕ → ℝ} {b : ℝ} (h : ∀ (n : ℕ), s n ≤ b) (N : ℕ*) : starSeq s N ≤ ↑b</code><span class=\"sep\"></span><code class=\"docstring\">Pointwise upper bound `∀ n, s n ≤ b` lifts to `starSeq s N ≤ (b : ℝ*)`. </code>",
+ "87":
+ "<code>Goldblatt.starSeq (s : ℕ → ℝ) : ℕ* → ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §3.13 (p. 31): Extension of a sequence `s : ℕ → ℝ` to a hypersequence\n`starSeq s : ℕ* → ℝ*`. </code>",
+ "86":
+ "<code>Monotone.{u, v} {α : Type u} {β : Type v} [Preorder α] [Preorder β] (f : α → β) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function `f` is monotone if `a ≤ b` implies `f a ≤ f b`. </code>",
+ "85":
+ "<code>Goldblatt.Ch06.starSeq_mono {s : ℕ → ℝ} (hs : Monotone s) {M N : ℕ*} (hMN : M ≤ N) : starSeq s M ≤ starSeq s N</code><span class=\"sep\"></span><code class=\"docstring\">Monotonicity of `s : ℕ → ℝ` lifts to `starSeq s : ℕ* → ℝ*`. </code>",
+ "84":
+ "<code>Set.Infinite.{u} {α : Type u} (s : Set α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A set is infinite if it is not finite.\n\nThis is protected so that it does not conflict with global `Infinite`. </code>",
+ "83":
+ "<code>Nat.Prime (p : ℕ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`Nat.Prime p` means that `p` is a prime number, that is, a natural number\nat least 2 whose only divisors are `p` and `1`.\nThe theorem `Nat.prime_def` witnesses this description of a prime number. </code>",
+ "82":
+ "<code>Set.ofPred.{u} {α : Type u} (p : α → Prop) : Set α</code><span class=\"sep\"></span><code class=\"docstring\">Turn a predicate `p : α → Prop` into a set, also written as `{x | p x}` </code>",
+ "81":
+ "<code>Goldblatt.nonstandard_euclid_infinite_primes : {p | ∃ k, Nat.Prime k ∧ ↑k = p}.Infinite</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §5.12 (p. 57): Nonstandard proof of Euclid's theorem (`{p : ℕ | p.Prime}.Infinite`)\ndeduced from `nonstandard_exists_unlimited_prime` and Exercise 3.10(1)! </code>",
+ "80":
+ "<code>Goldblatt.InfinitesimalIdeal : Ideal ↥LimitedSubring</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §5.2 (p. 51): The ideal `𝕀` of infinitesimals inside the ring `𝕃` of limited numbers. </code>",
+ "8":
+ "<code>LinearOrder.{u_2} (α : Type u_2) : Type u_2</code><span class=\"sep\"></span><code class=\"docstring\">A linear order is reflexive, transitive, antisymmetric and total relation `≤`.\nWe assume that every linear ordered type has decidable `(≤)`, `(&lt;)`, and `(=)`. </code>",
+ "79":
+ "<code>Goldblatt.shadowRingHom : ↥LimitedSubring →+* ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Ring homomorphism `sh : 𝕃 →+* ℝ` (Goldblatt §5.6, p. 54). </code>",
+ "78":
+ "<code>RingHom.ker.{u, v, u_1} {R : Type u} {S : Type v} {F : Type u_1} [Semiring R] [Semiring S] [FunLike F R S]\n  [rcf : RingHomClass F R S] (f : F) : Ideal R</code><span class=\"sep\"></span><code class=\"docstring\">Kernel of a ring homomorphism as an ideal of the domain. </code>",
+ "77":
+ "<code>Goldblatt.ker_shadowRingHom : RingHom.ker shadowRingHom = InfinitesimalIdeal</code>",
+ "76":
+ "<code>Goldblatt.shadow_mul {b c : ℝ*} (hb : IsLimited b) (hc : IsLimited c) : shadow (b * c) = shadow b * shadow c</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Theorem 5.6.2(2) (p. 53): `sh(b * c) = sh(b) * sh(c)` for limited `b, c`. </code>",
+ "75":
+ "<code>Goldblatt.shadow_add {b c : ℝ*} (hb : IsLimited b) (hc : IsLimited c) : shadow (b + c) = shadow b + shadow c</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Theorem 5.6.2(1a) (p. 53): `sh(b + c) = sh(b) + sh(c)` for limited `b, c`. </code>",
+ "74":
+ "<code>Goldblatt.shadow (b : ℝ*) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Theorem 5.6.1 (p. 53): The shadow (standard part) `sh(b) ∈ ℝ` of a hyperreal `b`,\nconstructed directly as `sSup {r : ℝ | (r : ℝ*) &lt; b}` for limited `b` (and `0` otherwise). </code>",
+ "73":
+ "<code>Goldblatt.InfClose (b c : ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §5.4 (p. 52): `b` is infinitely close to `c` (`b ≈ₕ c`) if `b - c` is infinitesimal. </code>",
+ "72":
+ "<code>Goldblatt.IsLimited (b : ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §5.1 (p. 49): `b ∈ ℝ*` is limited (`b ∈ 𝕃`) if `|b| &lt; n` for some `n ∈ ℕ`. </code>",
+ "71":
+ "<code>Hyperreal : Type</code><span class=\"sep\"></span><code class=\"docstring\">Hyperreal numbers on the ultrafilter extending the cofinite filter. </code>",
+ "70":
+ "<code>Goldblatt.infClose_shadow {b : ℝ*} (hb : IsLimited b) : b ≈ₕ ↑(shadow b)</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Theorem 5.6.1 (p. 53): Every limited hyperreal `b` is infinitely close to `shadow b`. </code>",
+ "7": "<code>LinearOrder F</code>",
+ "69":
+ "<code>Filter.hyperfilter.{u} (α : Type u) [Infinite α] : Ultrafilter α</code><span class=\"sep\"></span><code class=\"docstring\">The ultrafilter extending the cofinite filter. </code>",
+ "68":
+ "<code>Goldblatt.Ch04.ultrapowerFormula.{u_1, u_2} {I : Type u_1} {S : Type u_2} (U : Ultrafilter I) :\n  LFormula S → LFormula ((↑U).Germ S)</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.7 (p. 47): Parametric `*-transform` of an `ℒ_S`-formula into `ℒ_{Germ U S}`. </code>",
+ "67":
+ "<code>Inhabited.default.{u} {α : Sort u} [self : Inhabited α] : α</code><span class=\"sep\"></span><code class=\"docstring\">`default` is a function that produces a \"default\" element of any\n`Inhabited` type. This element does not have any particular specified\nproperties, but it is often an all-zeroes value. </code>",
+ "66":
+ "<code>Goldblatt.Ch04.Holds.{u_1} {S : Type u_1} (env : ℕ → S) : LFormula S → Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.3 (pp. 41–42): Truth evaluation `Holds env φ` of an `ℒ_S`-formula under `env`:\n* `P(τ_1, …, τ_k)` holds iff every `τ_i` evaluates to some `v i` and `v ∈ P`;\n* Boolean connectives `∧, ∨, ¬, →, ↔` have their standard truth-table meanings;\n* `(∀ x ∈ P) φ` holds iff for all `s ∈ P`, if `φ(s)` is defined then `φ(s)` holds;\n* `(∃ x ∈ P) φ` holds iff there is some `s ∈ P` for which `φ(s)` is defined and holds. </code>",
+ "65":
+ "<code>Goldblatt.Ch04.IsSentence.{u_1} {S : Type u_1} (φ : LFormula S) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.3 (p. 41): A sentence is an `ℒ_S`-formula in which all variables are bound\n(no free variables). </code>",
+ "64": "<code>IsSentence φ</code>",
+ "63":
+ "<code>Complex : Type</code><span class=\"sep\"></span><code class=\"docstring\">Complex numbers consist of two `Real`s: a real part `re` and an imaginary part `im`. </code>",
+ "62":
+ "<code>Goldblatt.Ch04.LFormula.{u_1} (S : Type u_1) : Type u_1</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.3 (pp. 40–41): First-order bounded-quantifier formulae of the language `ℒ_S`. </code>",
+ "61": "<code>LFormula ℂ</code>",
+ "60":
+ "<code>Goldblatt.Ch04.complex_transfer_principle {φ : LFormula ℂ} (hφ : IsSentence φ) :\n  Holds default (ultrapowerFormula (Filter.hyperfilter ℕ) φ) ↔ Holds default φ</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.7 (p. 47): Transfer Principle specialized to the language `ℒ_ℂ` of the complex\nnumbers and its ultrapower `Hypercomplex`. </code>",
+ "6":
+ "<code>Field.{u} (K : Type u) : Type u</code><span class=\"sep\"></span><code class=\"docstring\">A `Field` is a `CommRing` with multiplicative inverses for nonzero elements.\n\nAn instance of `Field K` includes maps `ratCast : ℚ → K` and `qsmul : ℚ → K → K`.\nThose two fields are needed to implement the `DivisionRing K → Algebra ℚ K` instance since we need\nto control the specific definitions for some special cases of `K` (in particular `K = ℚ` itself).\nSee also note [forgetful inheritance].\n\nIf the field has positive characteristic `p`, our division by zero convention forces\n`ratCast (1 / p) = 1 / 0 = 0`. </code>",
+ "59":
+ "<code>LT.lt.{u} {α : Type u} [self : LT α] : α → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">The less-than relation: `x &lt; y` \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `&lt;` in identifiers is `lt`.</code>",
+ "58": "<code>ℝ</code>",
+ "57":
+ "<code>Goldblatt.starSet (A : Set ℝ) : Set ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §3.9 (p. 28): Enlargement `*A ⊆ ℝ*` of a subset `A ⊆ ℝ`. </code>",
+ "56": "<code>ℝ*</code>",
+ "55":
+ "<code>Set.{u} (α : Type u) : Type u</code><span class=\"sep\"></span><code class=\"docstring\">A set is a collection of elements of some type `α`.\n\nAlthough `Set` is defined as `α → Prop`, this is an implementation detail which should not be\nrelied on. Instead, `Set.ofPred` (also written `{x | p x}`) and membership of a set (`∈`) should be\nused to convert between sets and predicates.\n</code>",
+ "54": "<code>Set ℝ</code>",
+ "53":
+ "<code>Goldblatt.Ch04.exists_unlimited_mem_starSet_iff_unbounded (A : Set ℝ) :\n  (∃ x ∈ Goldblatt.starSet A, ∀ (r : ℝ), ↑r &lt; x) ↔ ∀ (r : ℝ), ∃ a ∈ A, r &lt; a</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.1 Example 6 (p. 37): **Unbounded Sets of Reals** — the enlargement `*A` of a\nsubset `A ⊆ ℝ` contains a positive unlimited member (`∀ r : ℝ, r &lt; x`) if and only if `A` is\nunbounded above in `ℝ` (`∀ r : ℝ, ∃ a ∈ A, r &lt; a`), with the forward direction proved via\nExistential Transfer. </code>",
+ "52":
+ "<code>Or (a b : Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`Or a b`, or `a ∨ b`, is the disjunction of propositions. There are two\nconstructors for `Or`, called `Or.inl : a → a ∨ b` and `Or.inr : b → a ∨ b`,\nand you can use `match` or `cases` to destruct an `Or` assumption into the\ntwo cases.\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `∨` in identifiers is `or`.</code>",
+ "51":
+ "<code>LE.le.{u} {α : Type u} [self : LE α] : α → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">The less-equal relation: `x ≤ y` \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `≤` in identifiers is `le`.</code>",
+ "50": "<code>↑n ≤ N ∧ N ≤ ↑n + 1</code>",
+ "5": "<code>Field F</code>",
+ "49":
+ "<code>Goldblatt.Hypernat : Type</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §3.9, §3.13, §5.10: The hypernaturals `ℕ*` as the ultrapower of `ℕ`. </code>",
+ "48": "<code>ℕ*</code>",
+ "47":
+ "<code>Goldblatt.Ch04.hypernat_discrete_between_nat (N : ℕ*) (n : ℕ) (h : ↑n ≤ N ∧ N ≤ ↑n + 1) : N = ↑n ∨ N = ↑n + 1</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.1 Example 5 (p. 37) &amp; Exercise 4.1.1: **Discreteness of `ℕ*`** — no hypernatural\noccurs strictly between `n` and `n + 1` for any standard `n : ℕ`, proved via Universal Transfer. </code>",
+ "46":
+ "<code class=\"docstring\">The universe of propositions. `Prop ≡ Sort 0`.\n\nEvery proposition is propositionally equal to either `True` or `False`. </code>",
+ "45":
+ "<code>Goldblatt.Ch04.PartialFun.{u_1} (S : Type u_1) (m : ℕ) : Type u_1</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.2 (p. 38): An `m`-ary (possibly partial) function on a carrier `S`, equipped with\nan explicit domain `dom ⊆ S^m` and an underlying mapping `toFun : (Fin m → S) → S`. </code>",
+ "44": "<code>PartialFun S m</code>",
+ "43": "<code>ℕ</code>",
+ "42":
+ "<code>Goldblatt.Ch04.PartialFun.IsTotal.{u_1} {S : Type u_1} {m : ℕ} (f : PartialFun S m) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Predicate asserting that an `m`-ary `PartialFun` is everywhere defined (`dom = Set.univ`). </code>",
+ "41":
+ "<code>Goldblatt.Ch04.LTerm.{u_1} (S : Type u_1) : Type u_1</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §4.3 (p. 39): Terms of the language `ℒ_S` of a relational structure on `S`, built from\ncountably many variables (`ℕ`), constants from `S`, and applications of `m`-ary partial functions. </code>",
+ "40":
+ "<code>HAdd.hAdd.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HAdd α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a + b` computes the sum of `a` and `b`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `+` in identifiers is `add`.</code>",
+ "4":
+ "<code class=\"docstring\">A type universe. `Type ≡ Type 0`, `Type u ≡ Sort (u + 1)`. </code>",
+ "39": "<code>SeqEquiv F s s'</code>",
+ "38": "<code>SeqEquiv F r r'</code>",
+ "37":
+ "<code>Real : Type</code><span class=\"sep\"></span><code class=\"docstring\">The type `ℝ` of real numbers constructed as equivalence classes of Cauchy sequences of rational\nnumbers. </code>",
+ "36":
+ "<code>Goldblatt.seqEquiv_add_mul {F : Filter ℕ} {r r' s s' : ℕ → ℝ} (hr : SeqEquiv F r r') (hs : SeqEquiv F s s') :\n  SeqEquiv F (r + s) (r' + s') ∧ SeqEquiv F (r * s) (r' * s')</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Exercise 3.3(2) (p. 24): `SeqEquiv F` is a ring congruence on `ℕ → ℝ`. </code>",
+ "35":
+ "<code>Goldblatt.SeqEquiv (F : Filter ℕ) (r s : ℕ → ℝ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §3.2 (p. 24): Almost-everywhere agreement modulo a filter `F`. </code>",
+ "343":
+ "<code>NormedAddCommGroup.{u_4} (E : Type u_4) : Type u_4</code><span class=\"sep\"></span><code class=\"docstring\">A normed group is an additive group endowed with a norm for which `dist x y = ‖-x + y‖` defines\na metric space structure. </code>",
+ "342": "<code>NormedAddCommGroup E</code>",
+ "341":
+ "<code>Goldblatt.Ch19.separating_dual_of_ne.{u_1} {E : Type u_1} [NormedAddCommGroup E] [NormedSpace ℝ E] {x y : E}\n  (hxy : x ≠ y) : ∃ g, ‖g‖ = 1 ∧ g x ≠ g y</code><span class=\"sep\"></span><code class=\"docstring\">**Point Separation by Continuous Linear Functionals** in any real normed space `E`, proved from\nour nonstandard Hahn–Banach Theorem: if `x ≠ y` in `E`, there exists `g : E →L[ℝ] ℝ` with\n`‖g‖ = 1` and `g x ≠ g y`! </code>",
+ "340":
+ "<code>Norm.norm.{u_4} {E : Type u_4} [self : Norm E] : E → ℝ</code><span class=\"sep\"></span><code class=\"docstring\">the `ℝ`-valued norm function. </code>",
+ "34":
+ "<code>Equivalence.{u} {α : Sort u} (r : α → α → Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">An equivalence relation `r : α → α → Prop` is a relation that is\n\n* reflexive: `r x x`,\n* symmetric: `r x y` implies `r y x`, and\n* transitive: `r x y` and `r y z` implies `r x z`.\n\nEquality is an equivalence relation, and equivalence relations share many of the properties of\nequality.\n</code>",
+ "339": "<code>E →L[ℝ] ℝ</code>",
+ "338":
+ "<code>ContinuousLinearMap.{u_1, u_2, u_3, u_4} {R : Type u_1} {S : Type u_2} [Semiring R] [Semiring S] (σ : R →+* S)\n  (M : Type u_3) [TopologicalSpace M] [AddCommMonoid M] (M₂ : Type u_4) [TopologicalSpace M₂] [AddCommMonoid M₂]\n  [Module R M] [Module S M₂] : Type (max u_3 u_4)</code><span class=\"sep\"></span><code class=\"docstring\">Continuous linear maps between modules. We only put the type classes that are necessary for the\ndefinition, although in applications `M` and `M₂` will be topological modules over the topological\nring `R`. </code>",
+ "337": "<code>↥M →L[ℝ] ℝ</code>",
+ "336":
+ "<code>NormedSpace.{u_6, u_7} (𝕜 : Type u_6) (E : Type u_7) [NormedField 𝕜] [SeminormedAddCommGroup E] : Type (max u_6 u_7)</code><span class=\"sep\"></span><code class=\"docstring\">A normed space over a normed field is a vector space endowed with a norm which satisfies the\nequality `‖c • x‖ = ‖c‖ ‖x‖`. We require only `‖c • x‖ ≤ ‖c‖ ‖x‖` in the definition, then prove\n`‖c • x‖ = ‖c‖ ‖x‖` in `norm_smul`.\n\nNote that since this requires `SeminormedAddCommGroup` and not `NormedAddCommGroup`, this\ntypeclass can be used for \"seminormed spaces\" too, just as `Module` can be used for\n\"semimodules\". </code>",
+ "335": "<code>NormedSpace ℝ E</code>",
+ "334":
+ "<code>SeminormedAddCommGroup.{u_4} (E : Type u_4) : Type u_4</code><span class=\"sep\"></span><code class=\"docstring\">A seminormed group is an additive group endowed with a norm for which `dist x y = ‖-x + y‖`\ndefines a pseudometric space structure. </code>",
+ "333": "<code>SeminormedAddCommGroup E</code>",
+ "332":
+ "<code>Goldblatt.Ch19.hahn_banach_norm_preserving.{u_1} {E : Type u_1} [SeminormedAddCommGroup E] [NormedSpace ℝ E]\n  (M : Submodule ℝ E) (f : ↥M →L[ℝ] ℝ) : ∃ g, (∀ (m : ↥M), g ↑m = f m) ∧ ‖g‖ = ‖f‖</code><span class=\"sep\"></span><code class=\"docstring\">**Norm-Preserving Hahn–Banach Extension Theorem** for real normed spaces, proved directly from\nour nonstandard `hahn_banach_symmetric` (with zero calls to Mathlib's `HahnBanach`): every\ncontinuous linear functional `f : M →L[ℝ] ℝ` on a subspace `M ≤ E` extends to a continuous linear\nfunctional `g : E →L[ℝ] ℝ` with `‖g‖ = ‖f‖`! </code>",
+ "331": "<code>E</code>",
+ "330": "<code>↥M</code>",
+ "33":
+ "<code>Nat : Type</code><span class=\"sep\"></span><code class=\"docstring\">The natural numbers, starting at zero.\n\nThis type is special-cased by both the kernel and the compiler, and overridden with an efficient\nimplementation. Both use a fast arbitrary-precision arithmetic library (usually\n[GMP](https://gmplib.org/)); at runtime, `Nat` values that are sufficiently small are unboxed.\n</code>",
+ "329": "<code>E →ₗ[ℝ] ℝ</code>",
+ "328":
+ "<code>Goldblatt.Ch19.IsDominatedBy.{u_1} {E : Type u_1} [AddCommGroup E] [Module ℝ E] (M : Submodule ℝ E) (f : ↥M →ₗ[ℝ] ℝ)\n  (p : E → ℝ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §19.10 (p. 276): A linear functional `f : M →ₗ[ℝ] ℝ` on a subspace `M ≤ E` is\n**dominated by `p`** if `f m ≤ p (m : E)` for all `m : M`. </code>",
+ "327":
+ "<code>LinearMap.{u_14, u_15, u_16, u_17} {R : Type u_14} {S : Type u_15} [Semiring R] [Semiring S] (σ : R →+* S)\n  (M : Type u_16) (M₂ : Type u_17) [AddCommMonoid M] [AddCommMonoid M₂] [Module R M] [Module S M₂] :\n  Type (max u_16 u_17)</code><span class=\"sep\"></span><code class=\"docstring\">A map `f` between an `R`-module and an `S`-module over a ring homomorphism `σ : R →+* S`\nis semilinear if it satisfies the two properties `f (x + y) = f x + f y` and\n`f (c • x) = (σ c) • f x`. Elements of `LinearMap σ M M₂` (available under the notation\n`M →ₛₗ[σ] M₂`) are bundled versions of such maps. For plain linear maps (i.e. for which\n`σ = RingHom.id R`), the notation `M →ₗ[R] M₂` is available. An unbundled version of plain linear\nmaps is available with the predicate `IsLinearMap`, but it should be avoided most of the time. </code>",
+ "326": "<code>↥M →ₗ[ℝ] ℝ</code>",
+ "325":
+ "<code>Submodule.{u, v} (R : Type u) (M : Type v) [Semiring R] [AddCommMonoid M] [Module R M] : Type v</code><span class=\"sep\"></span><code class=\"docstring\">A submodule of a module is one which is closed under vector operations.\nThis is a sufficient condition for the subset of vectors in the submodule\nto themselves form a module. </code>",
+ "324": "<code>Submodule ℝ E</code>",
+ "323":
+ "<code>Goldblatt.Ch19.IsSublinear.{u_1} {E : Type u_1} [AddCommGroup E] [Module ℝ E] (p : E → ℝ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §19.10 (p. 276): A functional `p : E → ℝ` is **sublinear** if it is positively\nhomogeneous and subadditive. </code>",
+ "322": "<code>E → ℝ</code>",
+ "321":
+ "<code>Module.{u, v} (R : Type u) (M : Type v) [Semiring R] [AddCommMonoid M] : Type (max u v)</code><span class=\"sep\"></span><code class=\"docstring\">A module is a generalization of vector spaces to a scalar semiring.\nIt consists of a scalar semiring `R` and an additive monoid of \"vectors\" `M`,\nconnected by a \"scalar multiplication\" operation `r • x : M`\n(where `r : R` and `x : M`) with some natural associativity and\ndistributivity axioms similar to those on a ring. </code>",
+ "320": "<code>Module ℝ E</code>",
+ "32":
+ "<code>Filter.{u_1} (α : Type u_1) : Type u_1</code><span class=\"sep\"></span><code class=\"docstring\">A filter `F` on a type `α` is a collection of sets of `α` which contains the whole `α`,\nis upwards-closed, and is stable under intersection. We do not forbid this collection to be\nall sets of `α`. </code>",
+ "319":
+ "<code>AddCommGroup.{u_2} (G : Type u_2) : Type u_2</code><span class=\"sep\"></span><code class=\"docstring\">An additive commutative group is an additive group with commutative `(+)`. \n\n[Wikidata Q181296](https://www.wikidata.org/wiki/Q181296)</code>",
+ "318": "<code>AddCommGroup E</code>",
+ "317":
+ "<code>Goldblatt.Ch19.hahn_banach_extension.{u_1} {E : Type u_1} [AddCommGroup E] [Module ℝ E] {p : E → ℝ} (hp : IsSublinear p)\n  {M : Submodule ℝ E} {f : ↥M →ₗ[ℝ] ℝ} (hf : IsDominatedBy M f p) : ∃ g, (∀ (m : ↥M), g ↑m = f m) ∧ ∀ (x : E), g x ≤ p x</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §19.10 (pp. 276–278): **The Nonstandard Hahn–Banach Extension Theorem**.\nLet `p : E → ℝ` be a positively homogeneous and subadditive (`IsSublinear`) functional on a real\nvector space `E`, and let `f : M →ₗ[ℝ] ℝ` be a linear functional on a subspace `M ≤ E` dominated by\n`p`. Defining `g(x) := sh(f⁺(stdElem x))` via the hyperlinear extension `f⁺` and the ultrapower\nshadow functional `shadowGermLinearMap (fineUltrafilter E)` produces a global linear functional\n`g : E →ₗ[ℝ] ℝ` that extends `f` and is dominated by `p`! </code>",
+ "316":
+ "<code>Goldblatt.Ch19.stoneClopenSet.{u_1} (B : Type u_1) [BooleanAlgebra B] (x : B) : Set (StoneSpace B)</code><span class=\"sep\"></span><code class=\"docstring\">Basic Stone set viewed in `StoneSpace B`. </code>",
+ "315":
+ "<code>IsClopen.{u} {X : Type u} [TopologicalSpace X] (s : Set X) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A set is clopen if it is both closed and open. </code>",
+ "314": "<code>B</code>",
+ "313":
+ "<code>Goldblatt.Ch19.isClopen_stoneClopenSet.{u_1} (B : Type u_1) [BooleanAlgebra B] (x : B) : IsClopen (stoneClopenSet B x)</code><span class=\"sep\"></span><code class=\"docstring\">Every basic Stone set `stoneClopenSet B x` is **clopen** in `StoneSpace B`! </code>",
+ "312":
+ "<code>Goldblatt.Ch19.stoneHyperfiniteRep.{u_1} (B : Type u_1) [BooleanAlgebra B] :\n  BoundedLatticeHom B (Set ↑(Atoms ↥(hyperfiniteApproxSubalgebra B)))</code><span class=\"sep\"></span><code class=\"docstring\">**Hyperfinite Proof of Stone's Field-of-Sets Theorem** (Goldblatt §19.4, p. 268):\nComposing `stdToHyperfiniteApprox B : B ↪ B⁺` with `atomsBelowHom B⁺ : B⁺ ↪ Set (Atoms B⁺)` gives\nan explicit order- and Boolean-algebra embedding of **every** Boolean algebra `B` into the power-set\nalgebra `Set (Atoms (hyperfiniteApproxSubalgebra B))` of internal atoms of `B⁺`! </code>",
+ "311":
+ "<code>Function.Injective.{u_1, u_2} {α : Sort u_1} {β : Sort u_2} (f : α → β) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function `f : α → β` is called injective if `f x = f y` implies `x = y`. </code>",
+ "310":
+ "<code>BooleanAlgebra.{u} (α : Type u) : Type u</code><span class=\"sep\"></span><code class=\"docstring\">A Boolean algebra is a bounded distributive lattice with a complement operator `ᶜ` such that\n`x ⊓ xᶜ = ⊥` and `x ⊔ xᶜ = ⊤`. For convenience, it must also provide a set difference operation `\\`\nand a Heyting implication `⇨` satisfying `x \\ y = x ⊓ yᶜ` and `x ⇨ y = y ⊔ xᶜ`.\n\nThis is a generalization of (classical) logic of propositions, or the powerset lattice.\n\nSince `BoundedOrder`, `OrderBot`, and `OrderTop` are mixins that require `LE`\nto be present at define-time, the `extends` mechanism does not work with them.\nInstead, we extend using the underlying `Bot` and `Top` data typeclasses, and replicate the\norder axioms of those classes here. A \"forgetful\" instance back to `BoundedOrder` is provided.\n</code>",
+ "31": "<code>Filter ℕ</code>",
+ "309": "<code>BooleanAlgebra B</code>",
+ "308":
+ "<code>Goldblatt.Ch19.stoneHyperfiniteRep_injective.{u_1} (B : Type u_1) [BooleanAlgebra B] :\n  Function.Injective ⇑(stoneHyperfiniteRep B)</code>",
+ "307":
+ "<code>PadicInt.appr {p : ℕ} [hp_prime : Fact (Nat.Prime p)] : ℤ_[p] → ℕ → ℕ</code><span class=\"sep\"></span><code class=\"docstring\">`appr n x` gives a value `v : ℕ` such that `x` and `↑v : ℤ_p` are congruent mod `p^n`.\nSee `appr_spec`. </code>",
+ "306":
+ "<code>Goldblatt.Ch18.basePDigit (p z i : ℕ) : ℕ</code><span class=\"sep\"></span><code class=\"docstring\">Base-$p$ `i`-th digit `(z / p ^ i) % p` of a natural number `z : ℕ` (Goldblatt §18.7, p. 255). </code>",
+ "305":
+ "<code>Goldblatt.Ch18.thetaP (p : ℕ) [Fact (Nat.Prime p)] : ℤ* →+* ℤ_[p]</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §18.4 (p. 240): The canonical surjective ring homomorphism `θ_p : ℤ* →+* ℤ_[p]`\nlifting the compatible residue maps `ℤ* →+* ZMod (p ^ k)`. </code>",
+ "304":
+ "<code>PadicInt (p : ℕ) [hp : Fact (Nat.Prime p)] : Type</code><span class=\"sep\"></span><code class=\"docstring\">The `p`-adic integers `ℤ_[p]` are the `p`-adic numbers with norm `≤ 1`. </code>",
+ "303": "<code>ℤ_[p]</code>",
+ "302":
+ "<code>Goldblatt.Ch18.exists_pos_hypernat_baseP_expansion_of_padicInt (p : ℕ) [Fact (Nat.Prime p)] (a : ℤ_[p]) :\n  ∃ x,\n    0 &lt; x ∧\n      (thetaP p) (natToHyperint x) = a ∧\n        (∀ (n : ℕ), hyperBasePDigit p x ↑n = ↑(basePDigit p (a.appr (n + 1)) n)) ∧\n          ∀ (y : ℕ*), (thetaP p) (natToHyperint y) = a ↔ ∀ (n : ℕ), hyperBasePDigit p y ↑n = hyperBasePDigit p x ↑n</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §18.7 (pp. 256–257): **Hyperfinite Base-$p$ Representation of Every $p$-adic Integer**\n— for every `a ∈ ℤ_[p]`, there exists a strictly positive hypernatural `x ∈ ℕ*` (`0 &lt; x`) such that:\n1. `thetaP p (natToHyperint x) = a`,\n2. For every standard degree `n : ℕ`, `hyperBasePDigit p x (n : ℕ*)` equals the standard $n$-th\n   base-$p$ Hensel digit `basePDigit p (a.appr (n + 1)) n` of `a`, and\n3. Any `y ∈ ℕ*` represents `a` (`thetaP p (natToHyperint y) = a`) if and only if `y` and `x` have\n   identical base-$p$ digits at every standard degree `n : ℕ`! </code>",
+ "301":
+ "<code>Goldblatt.Ch18.hyperBasePDigit (p : ℕ) (z i : ℕ*) : ℕ*</code><span class=\"sep\"></span><code class=\"docstring\">Nonstandard base-$p$ digit `hyperBasePDigit p z i : ℕ*` of `z : ℕ*` at hypernatural index\n`i : ℕ*` (Goldblatt §18.7, p. 255). </code>",
+ "300":
+ "<code>Goldblatt.Ch18.natToHyperint (n : ℕ*) : ℤ*</code><span class=\"sep\"></span><code class=\"docstring\">Embedding `ℕ* → ℤ*` lifting `Int.ofNat : ℕ → ℤ`. </code>",
+ "30":
+ "<code>Goldblatt.seqEquiv_equivalence (F : Filter ℕ) : Equivalence (SeqEquiv F)</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Exercise 3.3(1) (p. 24): `SeqEquiv F` is an equivalence relation on `ℕ → ℝ`. </code>",
+ "3": "<code>Type u_1</code>",
+ "299":
+ "<code>Goldblatt.Ch18.IsPadicInfinitesimalZ (p : ℕ) [Fact (Nat.Prime p)] (x : ℤ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §18.4 (p. 239): `x ∈ ℤ*` is a **$p$-adic infinitesimal** (`x ∈ I_p`) if\n`starPadicNormZ p x ≈ 0`. </code>",
+ "298":
+ "<code>Fact (p : Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Wrapper for adding elementary propositions to the type class systems.\nWarning: this can easily be abused. See the rest of this docstring for details.\n\nCertain propositions should not be treated as a class globally,\nbut sometimes it is very convenient to be able to use the type class system\nin specific circumstances.\n\nFor example, `ZMod p` is a field if and only if `p` is a prime number.\nIn order to be able to find this field instance automatically by type class search,\nwe have to turn `p.Prime` into an instance implicit assumption.\n\nOn the other hand, making `Nat.Prime` a class would require a major refactoring of the library,\nand it is questionable whether making `Nat.Prime` a class is desirable at all.\nThe compromise is to add the assumption `[Fact p.Prime]` to `ZMod.instField`.\n\nIn particular, this class is not intended for turning the type class system\ninto an automated theorem prover for first-order logic. </code>",
+ "297": "<code>Fact (Nat.Prime p)</code>",
+ "296":
+ "<code>Goldblatt.Ch18.padicInfClose_hypernat_iff_eq_basePDigits (p : ℕ) [Fact (Nat.Prime p)] (z w : ℕ*) :\n  IsPadicInfinitesimalZ p (natToHyperint z - natToHyperint w) ↔\n    ∀ (n : ℕ), hyperBasePDigit p z ↑n = hyperBasePDigit p w ↑n</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §18.7, **Theorem 18.7.1** &amp; §18.8, **Exercise 18.8(2)** (pp. 256–257):\nTwo hypernaturals `z, w ∈ ℕ*` are **$p$-adically infinitely close**\n(`IsPadicInfinitesimalZ p (natToHyperint z - natToHyperint w)`) if and only if their hyperfinite\nbase-$p$ expansions have identical digits at every standard degree `n : ℕ`:\n`∀ n : ℕ, hyperBasePDigit p z (n : ℕ*) = hyperBasePDigit p w (n : ℕ*)`! </code>",
+ "295":
+ "<code>Goldblatt.Ch18.HyperratInfinitesimal : Ideal ↥HyperratLimited</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §18.1 (p. 232): The ideal `ℚ_𝕀` (`*ℚ_inf`) of infinitesimal hyperrationals inside\n`HyperratLimited`. </code>",
+ "294":
+ "<code>Goldblatt.Ch18.HyperratLimited : Subring ℚ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §18.1 (p. 232): The commutative subring `ℚ_𝕃` (`*ℚ_lim`) of limited hyperrationals,\ndefined intrinsically inside `ℚ* = Germ (hyperfilter ℕ) ℚ`. </code>",
+ "293":
+ "<code>HasQuotient.Quotient.{u, v} (A : outParam (Type u)) {B : Type v} [self : HasQuotient A B] : B → Type (max u v)</code><span class=\"sep\"></span><code class=\"docstring\">`HasQuotient.Quotient A b` (denoted as `A ⧸ b`) is the quotient of the type `A` by `b`. </code>",
+ "292":
+ "<code>IsField.{u} (R : Type u) [Semiring R] : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A predicate to express that a (semi)ring is a (semi)field.\n\nThis is mainly useful because such a predicate does not contain data,\nand can therefore be easily transported along ring isomorphisms.\nAdditionally, this is useful when trying to prove that\na particular ring structure extends to a (semi)field. </code>",
+ "291":
+ "<code>Goldblatt.Ch18.hyperratQuotient_isField : IsField (↥HyperratLimited ⧸ HyperratInfinitesimal)</code><span class=\"sep\"></span><code class=\"docstring\">Intrinsic proof (without mentioning `ℝ`) that `HyperratLimited ⧸ HyperratInfinitesimal` is a\nfield (`IsField`), since every nonzero coset has an explicit inverse `[q⁻¹]` (Goldblatt §18.1, p. 233). </code>",
+ "290":
+ "<code>Goldblatt.Ch17.IsRelativelyLarge (M : Finset ℕ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §17.5 (p. 228): A finite set `M : Finset ℕ` is **relatively large** if `M` is nonempty\nand its cardinality is at least as great as its smallest element (`|M| ≥ min(M)`). </code>",
+ "29":
+ "<code>And (a b : Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`And a b`, or `a ∧ b`, is the conjunction of propositions. It can be\nconstructed and destructed like a pair: if `ha : a` and `hb : b` then\n`⟨ha, hb⟩ : a ∧ b`, and if `h : a ∧ b` then `h.left : a` and `h.right : b`.\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `∧` in identifiers is `and`.</code>",
+ "289":
+ "<code>Finset.Icc.{u_1} {α : Type u_1} [Preorder α] [LocallyFiniteOrder α] (a b : α) : Finset α</code><span class=\"sep\"></span><code class=\"docstring\">The finset $[a, b]$ of elements `x` such that `a ≤ x` and `x ≤ b`. Basically `Set.Icc a b` as a\nfinset. </code>",
+ "288":
+ "<code>Goldblatt.Ch17.paris_harrington_ramsey (r : ℕ) {k : ℕ} (hk : 0 &lt; k) (m : ℕ) :\n  ∃ N,\n    ∀ (c : Finset ℕ → Fin k),\n      ∃ M i₀, M ⊆ Finset.Icc 1 N ∧ m ≤ M.card ∧ IsRelativelyLarge M ∧ IsMonochromatic r c (↑M) i₀</code><span class=\"sep\"></span><code class=\"docstring\">**The Paris–Harrington Partition Theorem** (Goldblatt §17.5, p. 228):\nFor any `r k m : ℕ` with `0 &lt; k`, there exists `N : ℕ` such that for any `k`-colouring\n`c : Finset ℕ → Fin k` of `[{1, …, N}]^r`, there exists a subset `M ⊆ Finset.Icc 1 N` and a colour\n`i₀ : Fin k` such that `m ≤ M.card`, `IsRelativelyLarge M` (`|M| ≥ min(M)`), and\n`IsMonochromatic r c (↑M : Set ℕ) i₀`. </code>",
+ "287":
+ "<code>Finset.Iic.{u_1} {α : Type u_1} [Preorder α] [LocallyFiniteOrderBot α] (a : α) : Finset α</code><span class=\"sep\"></span><code class=\"docstring\">The finset $(-∞, b]$ of elements `x` such that `x ≤ b`. Basically `Set.Iic b` as a finset. </code>",
+ "286": "<code>Finset ℕ</code>",
+ "285":
+ "<code>Goldblatt.Ch17.finite_ramsey (r : ℕ) {k : ℕ} (hk : 0 &lt; k) (m : ℕ) :\n  ∃ N, ∀ (c : Finset ℕ → Fin k), ∃ M i₀, M ⊆ Finset.Iic N ∧ M.card = m ∧ IsMonochromatic r c (↑M) i₀</code><span class=\"sep\"></span><code class=\"docstring\">**Finite Ramsey's Theorem (`0`-Indexed Initial Segments `{0, …, N}`)**\n(Goldblatt Theorem 17.4.1, pp. 227–228):\nFor any `r k m : ℕ` with `0 &lt; k`, there exists `N : ℕ` such that every `k`-colouring\n`c : Finset ℕ → Fin k` of `r`-subsets of `{0, …, N}` (`Finset.Iic N`) admits a monochromatic subset\n`M ⊆ Finset.Iic N` of cardinality `M.card = m`.\n\nProved from Infinite Ramsey's Theorem via ultrapower compactness (`hyperfilter ℕ`) following\nGoldblatt §17.4! </code>",
+ "284":
+ "<code>Goldblatt.Ch17.IsAntichainSeq.{u_1} {P : Type u_1} [Preorder P] (p : ℕ → P) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Theorem 17.1.1(3) (p. 222): A sequence `p : ℕ → P` in a preordered set `(P, ≤)` is an\n**antichain sequence** if distinct indices give incomparable elements (`¬ p m ≤ p n ∧ ¬ p n ≤ p m`).\nNote that irreflexivity of `¬ (· ≤ ·)` automatically forces `p` to be injective! </code>",
+ "283":
+ "<code>StrictAnti.{u, v} {α : Type u} {β : Type v} [Preorder α] [Preorder β] (f : α → β) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function `f` is strictly antitone if `a &lt; b` implies `f b &lt; f a`. </code>",
+ "282":
+ "<code>StrictMono.{u, v} {α : Type u} {β : Type v} [Preorder α] [Preorder β] (f : α → β) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function `f` is strictly monotone if `a &lt; b` implies `f a &lt; f b`. </code>",
+ "281": "<code>ℕ → P</code>",
+ "280":
+ "<code>Infinite.{u_3} (α : Sort u_3) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A type is said to be infinite if it is not finite. Note that `Infinite α` is equivalent to\n`IsEmpty (Fintype α)` or `IsEmpty (Finite α)`. </code>",
+ "28":
+ "<code>Ne.{u} {α : Sort u} (a b : α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`a ≠ b`, or `Ne a b` is defined as `¬ (a = b)` or `a = b → False`,\nand asserts that `a` and `b` are not equal.\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `≠` in identifiers is `ne`.</code>",
+ "279":
+ "<code>PartialOrder.{u_2} (α : Type u_2) : Type u_2</code><span class=\"sep\"></span><code class=\"docstring\">A partial order is a reflexive, transitive, antisymmetric relation `≤`. </code>",
+ "278": "<code>PartialOrder P</code>",
+ "277":
+ "<code>Goldblatt.Ch17.infinite_poset_chain_or_antichain_via_ramsey.{u_1} {P : Type u_1} [PartialOrder P] [Infinite P] :\n  (∃ p, StrictMono p) ∨ (∃ p, StrictAnti p) ∨ ∃ p, IsAntichainSeq p</code><span class=\"sep\"></span><code class=\"docstring\">**Theorem 17.1.1 — Proof from Infinite Ramsey's Theorem** (Goldblatt §17.1, p. 222):\nEvery infinite partially ordered set `(P, ≤)` contains an infinite strictly increasing sequence,\nan infinite strictly decreasing sequence, or an infinite antichain, obtained by `2`-colouring\n`[P]^2` into comparable pairs (`0`) and incomparable pairs (`1`). </code>",
+ "276":
+ "<code>Goldblatt.Ch17.IsMonochromatic.{u_1} {α : Type u_1} (r : ℕ) {k : ℕ} (c : Finset α → Fin k) (H : Set α) (color : Fin k) :\n  Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §17.1 (p. 222): A subset `H ⊆ α` is **monochromatic of colour `color`** with respect\nto `r : ℕ` and a `k`-colouring `c : Finset α → Fin k` if every `r`-element subset `s` of `H` has\n`c s = color`. </code>",
+ "275": "<code>Fin k</code>",
+ "274": "<code>Finset ℕ → Fin k</code>",
+ "273": "<code>Set ℕ</code>",
+ "272":
+ "<code>Goldblatt.Ch17.infinite_ramsey (r : ℕ) {k : ℕ} (hk : 0 &lt; k) {X : Set ℕ} (hX : X.Infinite) (c : Finset ℕ → Fin k) :\n  ∃ H i₀, H ⊆ X ∧ H.Infinite ∧ IsMonochromatic r c H i₀</code><span class=\"sep\"></span><code class=\"docstring\">**Infinite Ramsey's Theorem (`infinite_ramsey`, `Set ℕ` Specialization)**\n(Goldblatt Theorem 17.3.1, pp. 224–227):\nFor all `r k : ℕ` (`0 &lt; k`), every infinite subset `X ⊆ ℕ`, and every `k`-colouring\n`c : Finset ℕ → Fin k`, there exists an infinite subset `H ⊆ X` and a colour `i₀ : Fin k` such\nthat every `r`-element subset `s` of `H` has `c s = i₀`. </code>",
+ "271":
+ "<code>Goldblatt.Ch17.IsMonochromaticSet.{u_1} {α : Type u_1} (r : ℕ) {k : ℕ} (c : Finset α → Fin k) (H : Set α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §17.1 (p. 222): A subset `H ⊆ α` is **monochromatic** for `r` and `c` if there exists\na single colour `color : Fin k` assigned to all `r`-element subsets of `H`. </code>",
+ "270":
+ "<code>Finset.card.{u_1} {α : Type u_1} (s : Finset α) : ℕ</code><span class=\"sep\"></span><code class=\"docstring\">`s.card` is the number of elements of `s`, aka its cardinality.\n\nThe notation `#s` can be accessed in the `Finset` locale. </code>",
+ "27": "<code>ℕ → ℝ</code>",
+ "269": "<code>Finset (Fin 6)</code>",
+ "268":
+ "<code>Fin (n : ℕ) : Type</code><span class=\"sep\"></span><code class=\"docstring\">Natural numbers less than some upper bound.\n\nIn particular, a `Fin n` is a natural number `i` with the constraint that `i &lt; n`. It is the\ncanonical type with `n` elements.\n</code>",
+ "267":
+ "<code>Finset.{u_3} (α : Type u_3) : Type u_3</code><span class=\"sep\"></span><code class=\"docstring\">`Finset α` is the type of finite sets of elements of `α`. It is implemented\nas a multiset (a list up to permutation) which has no duplicate elements. </code>",
+ "266": "<code>Finset (Fin 6) → Fin 2</code>",
+ "265":
+ "<code>Goldblatt.Ch17.ramsey_three_three_six (c : Finset (Fin 6) → Fin 2) : ∃ T, T.card = 3 ∧ IsMonochromaticSet 2 c ↑T</code><span class=\"sep\"></span><code class=\"docstring\">**The Party Problem (`R(3, 3) ≤ 6`)** (Goldblatt §17.1, pp. 221–222):\nEvery `2`-colouring of the `2`-element subsets (edges) of `Fin 6` admits a monochromatic\n`3`-element subset (triangle). </code>",
+ "264":
+ "<code>MeasureTheory.NullMeasurableSet.{u_2} {α : Type u_2} [MeasurableSpace α] (s : Set α)\n  (μ : MeasureTheory.Measure α := by volume_tac) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A set is called `NullMeasurableSet` if it can be approximated by a measurable set up to\na set of null measure. </code>",
+ "263":
+ "<code>Goldblatt.Ch16.nullMeasurableSet_iff_isLoebMeasurable_invShadow_omega (B : Set ℝ) :\n  (MeasureTheory.NullMeasurableSet B MeasureTheory.volume ↔ (M_line id).IsLoebMeasurable (invShadow id B)) ∧\n    (MeasureTheory.NullMeasurableSet B MeasureTheory.volume →\n      MeasureTheory.volume B = (M_line id).loebMeasure (invShadow id B))</code><span class=\"sep\"></span><code class=\"docstring\">Specialization of **Theorem 16.8.2** to `N = omegaNat` (`b = id`): a subset `B ⊆ ℝ` is Lebesgue\nmeasurable iff `invShadow id B` is Loeb measurable, with `volume B = (M_line id).loebMeasure (invShadow id B)`. </code>",
+ "262":
+ "<code>MeasurableSet.{u_1} {α : Type u_1} [MeasurableSpace α] (s : Set α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`MeasurableSet s` means that `s` is measurable (in the ambient measure space on `α`) </code>",
+ "261":
+ "<code>MeasureTheory.MeasureSpace.volume.{u_5} {α : Type u_5} [self : MeasureTheory.MeasureSpace α] : MeasureTheory.Measure α</code><span class=\"sep\"></span><code class=\"docstring\">`volume` is the canonical measure on `α`. </code>",
+ "260":
+ "<code>Goldblatt.Ch16.invShadow (b : ℕ → ℕ) (E : Set ℝ) : Set (LineGrid b)</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §16.8 (p. 216): The **inverse shadow** `sh⁻¹(E) = {s ∈ S : s ∈ ℝ_L ∧ sh(s) ∈ E}`\nof a subset `E ⊆ ℝ` inside `LineGrid b`. </code>",
+ "26":
+ "<code>Goldblatt.seq_has_zero_divisors : ∃ r s, r ≠ 0 ∧ s ≠ 0 ∧ r * s = 0</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §3.1 (p. 23): `ℕ → ℝ` has nonzero zero divisors and so is not a field/domain. </code>",
+ "259":
+ "<code>MeasureTheory.Measure.restrict.{u_2} {α : Type u_2} {_m0 : MeasurableSpace α} (μ : MeasureTheory.Measure α)\n  (s : Set α) : MeasureTheory.Measure α</code><span class=\"sep\"></span><code class=\"docstring\">Restrict a measure `μ` to a set `s`. </code>",
+ "258":
+ "<code>MeasureTheory.Measure.map.{u_4, u_5} {α : Type u_4} {β : Type u_5} [MeasurableSpace α] [MeasurableSpace β] (f : α → β)\n  (μ : MeasureTheory.Measure α) : MeasureTheory.Measure β</code><span class=\"sep\"></span><code class=\"docstring\">The pushforward of a measure. If `f` is not an almost everywhere measurable function,\nwe define it to be `0` if `μ = 0`, and to be an arbitrary Dirac mass otherwise. That way\nwe always have `map f 0 = 0`, and the push-forward of a probability measure is always a\nprobability measure. </code>",
+ "257":
+ "<code>Goldblatt.Ch16.lineSh (b : ℕ → ℕ) (x : LineGrid b) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Total shadow map `lineSh b : LineGrid b → ℝ` (`x ↦ shadow x.1`, sending unlimited grid points\nto `0`). </code>",
+ "256":
+ "<code>Measurable.{u_1, u_2} {α : Type u_1} {β : Type u_2} [MeasurableSpace α] [MeasurableSpace β] (f : α → β) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function `f` between measurable spaces is measurable if the preimage of every\nmeasurable set is measurable. </code>",
+ "255":
+ "<code>Goldblatt.Ch16.M_line_borel_measure {b : ℕ → ℕ} (hb : Goldblatt.IsUnlimitedNat ↑b) :\n  Measurable (lineSh b) ∧\n    MeasureTheory.Measure.map (lineSh b) ((M_line b).loebMeasure.restrict (invShadow b Set.univ)) =\n        MeasureTheory.volume ∧\n      ∀ ⦃B : Set ℝ⦄,\n        MeasurableSet B →\n          (M_line b).IsLoebMeasurable (invShadow b B) ∧ (M_line b).loebMeasure (invShadow b B) = MeasureTheory.volume B</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §16.8, **Lemma 16.8.3** (p. 217):\nFor any unlimited hypernatural `N = (b : ℕ*)`:\n1. `lineSh b : LineGrid b → ℝ` is measurable with respect to `(M_line b).loebMeasurableSpace`;\n2. Pushing `(M_line b).loebMeasure.restrict (invShadow b Set.univ)` forward along `lineSh b` yields\n   Lebesgue measure `MeasureTheory.volume` on `ℝ`;\n3. For every Borel set `B : Set ℝ` (`MeasurableSet B`), `invShadow b B` is Loeb measurable and\n   `(M_line b).loebMeasure (invShadow b B) = MeasureTheory.volume B`! </code>",
+ "254":
+ "<code>ENNReal.ofReal (r : ℝ) : ENNReal</code><span class=\"sep\"></span><code class=\"docstring\">`ofReal x` returns `x` if it is nonnegative, `0` otherwise. </code>",
+ "253":
+ "<code>Goldblatt.Ch16.InternalMeasureRing.loebMeasure.{u_1} {Ω : Type u_1} (M : InternalMeasureRing Ω) :\n  MeasureTheory.Measure Ω</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §16.5 (p. 211, **Peter Loeb's Theorem, Part 2**): The **Loeb measure** `μ_L` on the\ncomplete Loeb σ-algebra `M.loebMeasurableSpace`. </code>",
+ "252":
+ "<code>Goldblatt.Ch16.InternalMeasureRing.μ.{u_1} {Ω : Type u_1} (self : InternalMeasureRing Ω) : Set Ω → ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Internal hyperreal finitely additive measure `μ : Set Ω → ℝ*`. </code>",
+ "251":
+ "<code>Goldblatt.Ch16.InternalMeasureRing.IsLoebMeasurable.{u_1} {Ω : Type u_1} (M : InternalMeasureRing Ω) (B : Set Ω) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §16.5 (p. 211): Predicate `M.IsLoebMeasurable B` asserting that `B ⊆ Ω` belongs to\nthe Loeb σ-algebra `ℒ(𝒜, μ)`. </code>",
+ "250":
+ "<code>Goldblatt.Ch16.InternalMeasureRing.𝒜.{u_1} {Ω : Type u_1} (self : InternalMeasureRing Ω) : Set (Set Ω)</code><span class=\"sep\"></span><code class=\"docstring\">Ring of internal measurable sets. </code>",
+ "25":
+ "<code>Eq.{u_1} {α : Sort u_1} : α → α → Prop</code><span class=\"sep\"></span><code class=\"docstring\">The equality relation. It has one introduction rule, `Eq.refl`.\nWe use `a = b` as notation for `Eq a b`.\nA fundamental property of equality is that it is an equivalence relation.\n```\nvariable (α : Type) (a b c d : α)\nvariable (hab : a = b) (hcb : c = b) (hcd : c = d)\n\nexample : a = d :=\n  Eq.trans (Eq.trans hab (Eq.symm hcb)) hcd\n```\nEquality is much more than an equivalence relation, however. It has the important property that every assertion\nrespects the equivalence, in the sense that we can substitute equal expressions without changing the truth value.\nThat is, given `h1 : a = b` and `h2 : p a`, we can construct a proof for `p b` using substitution: `Eq.subst h1 h2`.\nExample:\n```\nexample (α : Type) (a b : α) (p : α → Prop)\n        (h1 : a = b) (h2 : p a) : p b :=\n  Eq.subst h1 h2\n\nexample (α : Type) (a b : α) (p : α → Prop)\n    (h1 : a = b) (h2 : p a) : p b :=\n  h1 ▸ h2\n```\nThe triangle in the second presentation is a macro built on top of `Eq.subst` and `Eq.symm`, and you can enter it by typing `\\t`.\nFor more information: [Equality](https://lean-lang.org/theorem_proving_in_lean4/quantifiers_and_equality.html#equality)\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `=` in identifiers is `eq`.</code>",
+ "249":
+ "<code>Goldblatt.Ch16.M_line (b : ℕ → ℕ) : InternalMeasureAlgebra (LineGrid b)</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §16.8 (p. 215): The weighted hyperfinite internal measure algebra `M_line b` on\n`LineGrid b`, assigning `μ(A) = |A| / N` to each internal subset `A ∈ 𝒫_I(lineGridSet b)`. </code>",
+ "248": "<code>LineGrid b</code>",
+ "247": "<code>Set (LineGrid b)</code>",
+ "246":
+ "<code>Goldblatt.Ch16.M_line_starInterval_measure {b : ℕ → ℕ} (hb : Goldblatt.IsUnlimitedNat ↑b) {a c : ℝ} (hac : a ≤ c)\n  {J : Set ℝ} (hJ_open : Set.Ioo a c ⊆ J) (hJ_closed : J ⊆ Set.Icc a c) :\n  have A := {x | ↑x ∈ Goldblatt.starSet J};\n  A ∈ (M_line b).𝒜 ∧\n    (M_line b).IsLoebMeasurable A ∧\n      (M_line b).μ A ≈ₕ ↑(c - a) ∧\n        Goldblatt.shadow ((M_line b).μ A) = c - a ∧ (M_line b).loebMeasure A = ENNReal.ofReal (c - a)</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §16.8, **Theorem 16.8.1** &amp; Remark (pp. 215–216):\nFor any unlimited hypernatural `N = (b : ℕ*)`, any `a ≤ c` in `ℝ`, and any interval `J` with\n`Set.Ioo a c ⊆ J ⊆ Set.Icc a c` (hence all four intervals `(a, c)`, `(a, c]`, `[a, c)`, `[a, c]`),\nthe hyperfinite slice `A_J = {x : LineGrid b | x.1 ∈ starSet J}` belongs to `(M_line b).𝒜`, is Loeb\nmeasurable, satisfies `(M_line b).μ A_J ≈ₕ ((c - a : ℝ) : ℝ*)`, and has Loeb measure\n`ENNReal.ofReal (c - a)`! </code>",
+ "245":
+ "<code>Goldblatt.Ch16.IsSigmaAlgebra.{u_1} {Ω : Type u_1} (𝒜 : Set (Set Ω)) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §16.1 (p. 204): A **σ-algebra of sets** is a σ-ring of sets that is also an algebra\n(`Set.univ ∈ 𝒜`). </code>",
+ "244": "<code>Set (Set Ω)</code>",
+ "243":
+ "<code>Goldblatt.Ch16.IsSetRing.{u_1} {Ω : Type u_1} (𝒜 : Set (Set Ω)) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §16.1 (p. 204): A **ring of sets** on `Ω` is a nonempty collection `𝒜` of subsets of\n`Ω` closed under set differences and binary unions. </code>",
+ "242":
+ "<code>Cardinal.aleph0.{u} : Cardinal.{u}</code><span class=\"sep\"></span><code class=\"docstring\">`ℵ₀` is the smallest infinite cardinal. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `ℵ₀` in identifiers is `aleph0`.</code>",
+ "241":
+ "<code>HPow.hPow.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HPow α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a ^ b` computes `a` to the power of `b`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `^` in identifiers is `pow`.</code>",
+ "240":
+ "<code>Order.succ.{u_1} {α : Type u_1} [Preorder α] [SuccOrder α] : α → α</code><span class=\"sep\"></span><code class=\"docstring\">The successor of an element. If `a` is not maximal, then `succ a` is the least element greater\nthan `a`. If `a` is maximal, then `succ a = a`. </code>",
+ "24":
+ "<code>Goldblatt.seqOddOne : ℕ → ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Alternating sequence `(0, 1, 0, 1, …)` used in Goldblatt §3.1 (p. 23). </code>",
+ "239":
+ "<code>Goldblatt.Ch15.not_succ_continuum_saturated_hyperreal : ¬IsKappaSaturatedHyperreal (Order.succ (2 ^ Cardinal.aleph0))</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §15.5 (p. 198, Failure of `(2 ^ ℵ₀)⁺`-Saturation on `ℝ*`):\nBecause `#(ℝ*) = 2 ^ ℵ₀ &lt; Order.succ (2 ^ ℵ₀)` and `{ℝ* \\ {r} : r ∈ ℝ*}` has FIP with empty\nintersection, the sequence ultrapower `ℝ*` is **not** `(2 ^ ℵ₀)⁺`-saturated! </code>",
+ "238":
+ "<code>Cardinal.continuum.{u} : Cardinal.{u}</code><span class=\"sep\"></span><code class=\"docstring\">Cardinality of the continuum. </code>",
+ "237":
+ "<code>Goldblatt.Ch15.card_hyperreal_eq_continuum : Cardinal.mk ℝ* = Cardinal.continuum</code><span class=\"sep\"></span><code class=\"docstring\">Exact cardinality of the hyperreal line `ℝ*` constructed as `Germ (hyperfilter ℕ) ℝ`:\n`#(ℝ*) = 𝔠` (`Cardinal.continuum`). </code>",
+ "236":
+ "<code>Goldblatt.Ch15.card_infinite_internal_hyperreal_ge_aleph_one {Y : Set ℝ*} (hY : Goldblatt.IsInternal Y)\n  (hInf : Y.Infinite) : Cardinal.aleph 1 ≤ Cardinal.mk ↑Y</code><span class=\"sep\"></span><code class=\"docstring\">Every infinite internal subset `Y ⊆ ℝ*` has cardinality at least `ℵ₁` (and is therefore\nuncountable). </code>",
+ "235":
+ "<code>Prod.mk.{u, v} {α : Type u} {β : Type v} (fst : α) (snd : β) : α × β</code><span class=\"sep\"></span><code class=\"docstring\">Constructs a pair. This is usually written `(x, y)` instead of `Prod.mk x y`.\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `(a, b)` in identifiers is `mk`.</code>",
+ "234":
+ "<code>Prod.snd.{u, v} {α : Type u} {β : Type v} (self : α × β) : β</code><span class=\"sep\"></span><code class=\"docstring\">The second element of a pair. </code>",
+ "233":
+ "<code>Goldblatt.Ch15.IsConcurrentOnRel₂ (R : Set (ℝ* × ℝ*)) (A : Set ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Concurrency of a binary relation `R ⊆ ℝ* × ℝ*` on a subset `A ⊆ ℝ*` (`A` need not be\ninternal). </code>",
+ "232":
+ "<code>Cardinal.mk.{u} : Type u → Cardinal.{u}</code><span class=\"sep\"></span><code class=\"docstring\">The cardinal number of a type </code>",
+ "231":
+ "<code>Prod.fst.{u, v} {α : Type u} {β : Type v} (self : α × β) : α</code><span class=\"sep\"></span><code class=\"docstring\">The first element of a pair. </code>",
+ "230":
+ "<code>Goldblatt.Ch15.IsInternalRel₂ (R : Set (ℝ* × ℝ*)) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Predicate asserting that `R ⊆ ℝ* × ℝ*` is an internal binary relation on `ℝ*`. </code>",
+ "23":
+ "<code>HMul.hMul.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HMul α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a * b` computes the product of `a` and `b`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `*` in identifiers is `mul`.</code>",
+ "229":
+ "<code>Prod.{u, v} (α : Type u) (β : Type v) : Type (max u v)</code><span class=\"sep\"></span><code class=\"docstring\">The product type, usually written `α × β`. Product types are also called pair or tuple types.\nElements of this type are pairs in which the first element is an `α` and the second element is a\n`β`.\n\nProducts nest to the right, so `(x, y, z) : α × β × γ` is equivalent to `(x, (y, z)) : α × (β × γ)`.\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `×` in identifiers is `Prod`.</code>",
+ "228": "<code>Set (ℝ* × ℝ*)</code>",
+ "227":
+ "<code>Cardinal.aleph.{u_1} : Ordinal.{u_1} ↪o Cardinal.{u_1}</code><span class=\"sep\"></span><code class=\"docstring\">The `aleph` function gives the infinite cardinals listed by their ordinal index. `aleph 0 = ℵ₀`,\n`aleph 1 = succ ℵ₀` is the first uncountable cardinal, and so on.\n\nFor a version including finite cardinals, see `Cardinal.preAleph`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `ℵ_` in identifiers is `aleph`.</code>",
+ "226":
+ "<code>Goldblatt.Ch15.IsKappaSaturatedHyperreal (κ : Cardinal.{0}) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`κ`-saturation predicate for internal subsets of `ℝ*` (`κ : Cardinal`). </code>",
+ "225":
+ "<code>Goldblatt.Ch15.countable_saturation_hyperreal_iff_concurrent_internalRel₂ :\n  IsKappaSaturatedHyperreal (Cardinal.aleph 1) ↔\n    ∀ (R : Set (ℝ* × ℝ*)),\n      IsInternalRel₂ R →\n        ∀ (A : Set ℝ*),\n          A.Nonempty →\n            A ⊆ Prod.fst '' R →\n              Cardinal.mk ↑A &lt; Cardinal.aleph 1 → IsConcurrentOnRel₂ R A → ∃ b ∈ Prod.snd '' R, ∀ a ∈ A, (a, b) ∈ R</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §15.5, Exercise 15.5.1 on `ℝ* × ℝ*` (p. 199):\n`ℝ*` is `ℵ₁`-saturated **if and only if** for every internal binary relation `R ⊆ ℝ* × ℝ*`\n(`IsInternalRel₂ R`) and every nonempty subset `A ⊆ Prod.fst '' R` with `#A &lt; ℵ₁` (`A` need not\nbe internal), if `R` is concurrent on `A`, then there exists `b ∈ Prod.snd '' R` such that\n`(a, b) ∈ R` for all `a ∈ A`. </code>",
+ "224":
+ "<code>Goldblatt.IsPosInfinitesimal (b : ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §5.1 (p. 49): `b ∈ ℝ*` is positive infinitesimal if `0 &lt; b &lt; r` for all `r &gt; 0` in `ℝ`. </code>",
+ "223":
+ "<code>Goldblatt.Ch15.permanence_posInfinitesimal_underflow {A : Set ℝ*} (hA : Goldblatt.IsInternal A)\n  (hinf : ∀ (ε : ℝ*), Goldblatt.IsPosInfinitesimal ε → ε ∈ A) : ∃ r, 0 &lt; r ∧ Set.Ioo 0 ↑r ⊆ A</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §15.1 (p. 192, **Positive Infinitesimal Underflow**):\nIf an internal subset `A ⊆ ℝ*` contains all positive infinitesimals, then `A` contains `Set.Ioo 0 r`\nfor some positive standard real `r &gt; 0`. </code>",
+ "222":
+ "<code>Goldblatt.Ch14.exists_enlargement.{u} : ∃ E, E.IsEnlargement</code><span class=\"sep\"></span><code class=\"docstring\">Existence form of Goldblatt's **Enlargement Theorem** (p. 185):\nFor every universe `Type u`, there exists an ultrapower `NonstandardExtension.{u, u + 1}` that is\nan enlargement (`IsEnlargement`)! </code>",
+ "221":
+ "<code>Goldblatt.Ch14.NonstandardExtension.HyperfiniteApproxProperty.{u, v} (E : NonstandardExtension) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">**Hyperfinite Approximation Property** (Goldblatt §14.2, Theorem 14.2.1(3), p. 186):\nFor every set `A : Set α`, there exists `B ∈ *𝒫_F(A)` whose induced hyperfinite subset\n`E.hyperfiniteSet B` contains all standard members `im A = {*a : a ∈ A}` and is included in `*A`. </code>",
+ "220":
+ "<code>Goldblatt.Ch14.NonstandardExtension.EnlargementCondition.{u, v} (E : NonstandardExtension) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">**Enlargement Condition via Concurrent Binary Relations** (Goldblatt §14.2, Theorem 14.2.1(2),\np. 186): For every concurrent binary relation `R : α → β → Prop`, there exists `b : *β` such that\n`(*R) (*x) b` for all `x ∈ dom R`. </code>",
+ "22":
+ "<code>Goldblatt.seqEvenOne : ℕ → ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Alternating sequence `(1, 0, 1, 0, …)` used in Goldblatt §3.1 (p. 23). </code>",
+ "219":
+ "<code>Goldblatt.Ch14.NonstandardExtension.IsEnlargement.{u, v} (E : NonstandardExtension) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">**Enlargement via the Finite Intersection Property** (Goldblatt §14.1, p. 184):\n`E` is an **enlargement** if for every collection `ℱ : Set (Set β)` with the finite intersection\nproperty (`Ch02.HasFIP ℱ`), the intersection `⋂_{B ∈ ℱ} *B` is nonempty. </code>",
+ "218":
+ "<code>Goldblatt.Ch14.universalUltrapowerEnlargement.{u} : NonstandardExtension</code><span class=\"sep\"></span><code class=\"docstring\">**The Universal Ultrapower Enlargement** `universalUltrapowerEnlargement.{u}`:\na `NonstandardExtension.{u, u + 1}` constructed as the ultrapower over\n`fineUltrafilter UniverseIndex.{u}` (Goldblatt §14.1, Enlargement Theorem, p. 185 &amp; §14.3, p. 189). </code>",
+ "217":
+ "<code>Goldblatt.Ch14.universalUltrapowerEnlargement_isEnlargement.{u} :\n  universalUltrapowerEnlargement.IsEnlargement ∧\n    universalUltrapowerEnlargement.EnlargementCondition ∧ universalUltrapowerEnlargement.HyperfiniteApproxProperty</code><span class=\"sep\"></span><code class=\"docstring\">**Enlargement Theorem (Goldblatt §14.1, p. 185 &amp; §14.3, pp. 188–189)**:\n`universalUltrapowerEnlargement.{u}` is an **enlargement** (`IsEnlargement`), and hence by\nTheorem 14.2.1 satisfies all three equivalent enlargement principles (`IsEnlargement`,\n`EnlargementCondition`, and `HyperfiniteApproxProperty`) across the entire universe `Type u`! </code>",
+ "216":
+ "<code>Goldblatt.Ch14.NonstandardExtension.hyperfiniteSet.{u, v} (E : NonstandardExtension) {α : Type u}\n  (B : E.Star (Finset α)) : Set (E.Star α)</code><span class=\"sep\"></span><code class=\"docstring\">Underlying subset `{x ∈ *α | *(· ∈ ·) x B}` of `*α` represented by an element\n`B : E.Star (Finset α)` of `*(Finset α)` (Goldblatt §14.1–14.2, pp. 185–186). </code>",
+ "215":
+ "<code>Goldblatt.Ch14.NonstandardExtension.starElem.{u, v} (self : NonstandardExtension) {α : Type u} : α → self.Star α</code><span class=\"sep\"></span><code class=\"docstring\">Standard embedding `x ↦ *x` of `α` into `*α`. </code>",
+ "214":
+ "<code>Goldblatt.Ch14.NonstandardExtension.hyperfiniteSubsets.{u} {α : Type u} (A : Set α) : Set (Finset α)</code><span class=\"sep\"></span><code class=\"docstring\">Collection `𝒫_F(A) = {Z : Finset α | ↑Z ⊆ A}` of finite subsets of `A`\n(Goldblatt §14.1, p. 184). </code>",
+ "213":
+ "<code>Goldblatt.Ch14.NonstandardExtension.starSet.{u, v} (self : NonstandardExtension) {α : Type u} :\n  Set α → Set (self.Star α)</code><span class=\"sep\"></span><code class=\"docstring\">Nonstandard extension `*A ⊆ *α` of a subset `A ⊆ α`. </code>",
+ "212": "<code>E.Star (Finset α)</code>",
+ "211": "<code>Finset α</code>",
+ "210": "<code>Finset α → Finset α</code>",
+ "21":
+ "<code>Goldblatt.seqEvenOne_mul_seqOddOne : seqEvenOne * seqOddOne = 0</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §3.1 (p. 23): `(1, 0, 1, 0, …) ⊗ (0, 1, 0, 1, …) = 0`, exhibiting zero divisors. </code>",
+ "209":
+ "<code>Goldblatt.Ch14.fineUltrapowerExtension.{u, w} (I : Type w) : NonstandardExtension</code><span class=\"sep\"></span><code class=\"docstring\">The canonical `NonstandardExtension` over `fineUltrafilter I` (Goldblatt §14.3, pp. 187–189). </code>",
+ "208": "<code>NonstandardExtension</code>",
+ "207": "<code>Set α</code>",
+ "206":
+ "<code>Goldblatt.Ch14.theorem_14_3_1_hyperfinite_approx.{u} {α : Type u} (A : Set α) :\n  let E := fineUltrapowerExtension α;\n  have g := fun b ↦ {x ∈ b | x ∈ A};\n  have B := ↑g;\n  B ∈ E.starSet (NonstandardExtension.hyperfiniteSubsets A) ∧\n    E.starElem '' A ⊆ E.hyperfiniteSet B ∧ E.hyperfiniteSet B ⊆ E.starSet A</code><span class=\"sep\"></span><code class=\"docstring\">**Theorem 14.3.1 (Goldblatt's Direct Hyperfinite Approximation Proof `g(b) = b ∩ A`)**\n(Goldblatt §14.3, p. 189, lines 364–375):\nFor any subset `A : Set α`, putting `g(b) = b.filter (· ∈ A)` (`b ∩ A`) defines an element\n`[g] ∈ FineUltrapower α (Finset α)` satisfying `[g] ∈ *𝒫_F(A)` and\n`im A ⊆ ultraHyperfiniteSet (fineUltrafilter α) g ⊆ *A`! </code>",
+ "205":
+ "<code>id.{u} {α : Sort u} (a : α) : α</code><span class=\"sep\"></span><code class=\"docstring\">The identity function. `id` takes an implicit argument `α : Sort u`\n(a type in any universe), and an argument `a : α`, and returns `a`.\n\nAlthough this may look like a useless function, one application of the identity\nfunction is to explicitly put a type on an expression. If `e` has type `T`,\nand `T'` is definitionally equal to `T`, then `@id T' e` typechecks, and Lean\nknows that this expression has type `T'` rather than `T`. This can make a\ndifference for typeclass inference, since `T` and `T'` may have different\ntypeclass instances on them. `show T' from e` is sugar for an `@id T' e`\nexpression.\n</code>",
+ "204":
+ "<code>Goldblatt.Ch14.ultraHyperfiniteSet.{u, w} {J : Type w} (U : Ultrafilter J) {α : Type u} (S : J → Finset α) :\n  Set ((↑U).Germ α)</code><span class=\"sep\"></span><code class=\"docstring\">Hyperfinite subset `[S_j] ⊆ Germ U α` defined by an indexed family of finite sets\n`S : J → Finset α` (Goldblatt §12.3 &amp; §14.3, p. 189). </code>",
+ "203":
+ "<code>Goldblatt.Ch14.ultraElem.{u, w} {J : Type w} (U : Ultrafilter J) {α : Type u} (a : α) : (↑U).Germ α</code><span class=\"sep\"></span><code class=\"docstring\">Standard constant germ `a_J = [j ↦ a]` in an ultrapower over `U : Ultrafilter J`\n(Goldblatt §14.3, p. 187). </code>",
+ "202":
+ "<code>Goldblatt.Ch14.fineUltrafilter.{u} (I : Type u) : Ultrafilter (Finset I)</code><span class=\"sep\"></span><code class=\"docstring\">The **fine ultrafilter** `fineUltrafilter I` on `Finset I`, obtained by extending the proper\nfilter `Filter.atTop : Filter (Finset I)` via Zorn's Lemma / `Ultrafilter.of`\n(Goldblatt §14.3, p. 189, citing Theorem 2.6.1). </code>",
+ "201":
+ "<code>Goldblatt.Ch14.ultraRel₂.{u, v, w} {J : Type w} (U : Ultrafilter J) {α : Type u} {β : Type v} (R : α → β → Prop) :\n  (↑U).Germ α → (↑U).Germ β → Prop</code><span class=\"sep\"></span><code class=\"docstring\">Lifted binary relation `*R` on `Germ U α × Germ U β` in an ultrapower over `U : Ultrafilter J`\n(Goldblatt §14.3, p. 188). </code>",
+ "200": "<code>α</code>",
+ "20":
+ "<code class=\"docstring\">`end` closes a `section` or `namespace` scope. If the scope is named `&lt;id&gt;`, it has to be closed\nwith `end &lt;id&gt;`. The `end` command is optional at the end of a file.\n</code>",
+ "2":
+ "<code>Goldblatt.Ch01.isNonzeroInfinitesimalIn_iff_inv_isInfiniteIn.{u_1} {F : Type u_1} [Field F] [LinearOrder F]\n  [IsStrictOrderedRing F] (ε : F) : IsNonzeroInfinitesimalIn ε ↔ IsInfiniteIn ε⁻¹</code><span class=\"sep\"></span><code class=\"docstring\">**Reciprocal Duality (Goldblatt §1.1, p. 3)**: An element `ε` of a linearly ordered field is a\nnonzero infinitesimal if and only if its reciprocal `ε⁻¹` is infinitely large. </code>",
+ "199": "<code>FineUltrapower α β</code>",
+ "198":
+ "<code>Goldblatt.Ch14.theorem_14_3_1_single_concurrent.{u, v} {α : Type u} {β : Type v} {R : α → β → Prop}\n  (hR : IsConcurrent R) :\n  (∃ b, ∀ x ∈ relDom R, ultraRel₂ (fineUltrafilter α) R (ultraElem (fineUltrafilter α) x) b) ∧\n    ∀ (x : α), ultraElem (fineUltrafilter α) x ∈ ultraHyperfiniteSet (fineUltrafilter α) id</code><span class=\"sep\"></span><code class=\"docstring\">**Theorem 14.3.1 (Single Concurrent Relation &amp; Simultaneous Hyperfinite Set)**\n(Goldblatt §14.3, pp. 188–189):\nFor any concurrent binary relation `R : α → β → Prop`, taking `I = α` and the diagonal witness\n`b(s)` chosen for `s ∩ dom R` yields an element `[b] ∈ FineUltrapower α β` satisfying\n`∀ x ∈ relDom R, (*R) (*x) [b]` — while `[id] ∈ FineUltrapower α (Finset α)` simultaneously forms a\nhyperfinite set containing `*x` for every `x : α`! </code>",
+ "197":
+ "<code>Goldblatt.Ch14.relSlice.{u, v} {α : Type u} {β : Type v} (R : α → β → Prop) (x : α) : Set β</code><span class=\"sep\"></span><code class=\"docstring\">Right fibre / section `R[x] = {y : β | R x y}` of a binary relation `R` at `x : α`\n(Goldblatt §14.2, proof of Theorem 14.2.1, p. 186). </code>",
+ "196":
+ "<code>Set.image.{u, v} {α : Type u} {β : Type v} (f : α → β) (s : Set α) : Set β</code><span class=\"sep\"></span><code class=\"docstring\">The image of `s : Set α` by `f : α → β`, written `f '' s`, is the set of `b : β` such that\n`f a = b` for some `a ∈ s`. </code>",
+ "195":
+ "<code>Goldblatt.Ch02.HasFIP.{u_1} {I : Type u_1} (H : Set (Set I)) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">**Fact 2.5(7), definition** (Goldblatt p. 19): A collection `H ⊆ 𝒫(I)` has the *finite\nintersection property* (`HasFIP H`) if every finite subcollection `s` of `H` has nonempty\nintersection `(⋂ B ∈ s, B).Nonempty`.\n\nIncluding `s = ∅` (where `⋂ B ∈ ∅, B = Set.univ`) makes `(generatedSetFilter H).IsProper ↔ HasFIP H`\nhold unconditionally even when `H = ∅` or `I` is empty; for `[Nonempty I]`, see\n`hasFIP_iff_nonempty_finset` for equivalence with quantifying only over `s.Nonempty`. </code>",
+ "194":
+ "<code>Set.Nonempty.{u} {α : Type u} (s : Set α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">The property `s.Nonempty` expresses the fact that the set `s` is not empty. It should be used\nin theorem assumptions instead of `∃ x, x ∈ s` or `s ≠ ∅` as it gives access to a nice API thanks\nto the dot notation. </code>",
+ "193":
+ "<code>Goldblatt.Ch14.relDom.{u, v} {α : Type u} {β : Type v} (R : α → β → Prop) : Set α</code><span class=\"sep\"></span><code class=\"docstring\">Domain `dom R = {x : α | ∃ y : β, R x y}` of a binary relation `R : α → β → Prop`\n(Goldblatt §14.2, p. 185). </code>",
+ "192":
+ "<code>Goldblatt.Ch14.IsConcurrent.{u, v} {α : Type u} {β : Type v} (R : α → β → Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A binary relation `R : α → β → Prop` is **concurrent** (or *finitely satisfiable*) if its\ndomain `relDom R` is nonempty and for every finite subset `F : Finset α` with `↑F ⊆ relDom R`,\nthere exists `y : β` such that `∀ x ∈ F, R x y` (Goldblatt §14.2, p. 185). </code>",
+ "191": "<code>α → β → Prop</code>",
+ "190": "<code>Type u_2</code>",
+ "19":
+ "<code>Goldblatt.Ch01.IsInfinitesimalIn.add.{u_1} {F : Type u_1} [Field F] [LinearOrder F] [IsStrictOrderedRing F] {ε δ : F}\n  (hε : IsInfinitesimalIn ε) (hδ : IsInfinitesimalIn δ) : IsInfinitesimalIn (ε + δ)</code><span class=\"sep\"></span><code class=\"docstring\">The sum of two infinitesimals in any linearly ordered field is infinitesimal. </code>",
+ "189":
+ "<code>Goldblatt.Ch14.isConcurrent_iff_hasFIP_slices.{u, v} {α : Type u} {β : Type v} {R : α → β → Prop} :\n  IsConcurrent R ↔ (relDom R).Nonempty ∧ Goldblatt.Ch02.HasFIP (relSlice R '' relDom R)</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §14.2, proof of Theorem 14.2.1 (p. 186): A binary relation `R : α → β → Prop` is\nconcurrent if and only if `relDom R` is nonempty and the collection `{R[x] | x ∈ dom R}` of right\nslices has the finite intersection property (`Ch02.HasFIP`). </code>",
+ "188":
+ "<code>Goldblatt.Ch13.Entity.funSpace.{u_1} {X : Type u_1} (A B : Entity X) : Entity X</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §13.1 &amp; §13.5 (pp. 158, 164): Function space `B^A` of all set-theoretic functions\nfrom `A` to `B`. </code>",
+ "187":
+ "<code>Goldblatt.Ch13.realEntity : Entity ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Canonical copy of `ℝ` (`𝕌_0(ℝ)`) inside `Entity ℝ` (Goldblatt §13.9, p. 171). </code>",
+ "186":
+ "<code>Goldblatt.Ch13.Framework.star.{u_1, u_2} {X : Type u_1} {Y : Type u_2} (self : Framework X Y) : Entity X → Entity Y</code><span class=\"sep\"></span><code class=\"docstring\">Transfer map `a ↦ *a` between universes `Entity X → Entity Y`. </code>",
+ "185":
+ "<code>Set.univ.{u} {α : Type u} : Set α</code><span class=\"sep\"></span><code class=\"docstring\">The universal set on a type `α` is the set containing all elements of `α`.\n\nThis is conceptually the \"same as\" `α` (in set theory, it is actually the same), but type theory\nmakes the distinction that `α` is a type while `Set.univ` is a term of type `Set α`. `Set.univ` can\nitself be coerced to a type `↥Set.univ` which is in bijection with (but distinct from) `α`. </code>",
+ "184":
+ "<code>Goldblatt.InternalPartialFun.dom (self : Goldblatt.InternalPartialFun) : Set ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Domain of the partial function on `ℝ*`. </code>",
+ "183":
+ "<code>Goldblatt.Ch13.isInternalFun_total_iff_mem_star_funSpace {F : Goldblatt.InternalPartialFun} (hdom : F.dom = Set.univ) :\n  Goldblatt.IsInternalFun F ↔ partialFunToEntity F ∈ hyperrealFramework.star (realEntity.funSpace realEntity)</code><span class=\"sep\"></span><code class=\"docstring\">**Chapter 12 ↔ Chapter 13 Bridge for Total Functions (`*(ℝ^ℝ)`)**:\nA total hyperreal function `F : Goldblatt.InternalPartialFun` (`F.dom = Set.univ`) is internal in\nthe ultrapower sense of Chapter 12 (`Goldblatt.IsInternalFun F`) **if and only if** its graph entity\n`partialFunToEntity F` belongs to `hyperrealFramework.star (Entity.funSpace realEntity realEntity)`\n(Goldblatt §12.1 &amp; Exercise 13.13(3), pp. 147, 176). </code>",
+ "182":
+ "<code>Goldblatt.Ch13.partialFunToEntity (F : Goldblatt.InternalPartialFun) : Entity ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Embed a `Goldblatt.InternalPartialFun` as a set-theoretic function entity in `Entity ℝ*`\n(Goldblatt §12.1 &amp; §13.3, pp. 147, 160). </code>",
+ "181":
+ "<code>Goldblatt.Ch13.Framework.IsInternalEntity.{u_1, u_2} {X : Type u_1} {Y : Type u_2} (F : Framework X Y) (b : Entity Y) :\n  Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §13.10 (p. 172): An entity `b : Entity Y` in `𝕌'` is **internal** if `b ∈ *A` for some\nstandard set `A : Entity X` in `𝕌`. </code>",
+ "180":
+ "<code>Goldblatt.Ch13.hyperrealFramework : Framework ℝ ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §13.8 (p. 168): The **Hyperreal Superstructure Framework**\n`hyperrealFramework : Framework ℝ ℝ*` over `hyperfilter ℕ`, uniting the ultrapower construction of\n`ℝ*` (Chapters 3–12) with the universe framework of Chapter 13. </code>",
+ "18": "<code>IsInfinitesimalIn δ</code>",
+ "179":
+ "<code>Goldblatt.IsInternalFun (F : Goldblatt.InternalPartialFun) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.1 (p. 147): An `InternalPartialFun` is **internal** if it is of the form `[f_n]`\nfor some sequence `f : ℕ → RealPartialFun`. </code>",
+ "178": "<code>Goldblatt.InternalPartialFun</code>",
+ "177":
+ "<code>Goldblatt.Ch13.isInternalFun_iff_isInternalEntity_partialFunToEntity (F : Goldblatt.InternalPartialFun) :\n  Goldblatt.IsInternalFun F ↔ hyperrealFramework.IsInternalEntity (partialFunToEntity F)</code><span class=\"sep\"></span><code class=\"docstring\">**Chapter 12 ↔ Chapter 13 Bridge (`Goldblatt.IsInternalFun`)**:\nA partial hyperreal function `F : Goldblatt.InternalPartialFun` is internal in the ultrapower sense\nof Chapter 12 (`Goldblatt.IsInternalFun F`, i.e., `F = [f_n]`) **if and only if** its graph entity\n`partialFunToEntity F` is an internal entity of `hyperrealFramework`\n(Goldblatt §12.1 &amp; §13.10–13.13, pp. 147, 172–176). </code>",
+ "176":
+ "<code>Goldblatt.Ch13.Entity.{u_1} (X : Type u_1) : Type u_1</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §13.1 &amp; §13.6 (pp. 158, 164): The superstructure `Entity X` (`𝕌(X) = ⋃_{n : ℕ} 𝕌_n(X)`)\nover a base type `X` of individuals, constructed in the same universe level as `X`. </code>",
+ "175":
+ "<code>Goldblatt.HasHypercard (X : Set ℝ*) (N : ℕ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.3 (p. 149): Relational predicate `HasHypercard X N` asserting that `X` is a\nhyperfinite set of internal cardinality `N = [|S_n|] ∈ ℕ*`. </code>",
+ "174":
+ "<code>Goldblatt.Hypernat.toHyperreal : ℕ* → ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Order-preserving semiring embedding `ℕ* ↪ ℝ*`. </code>",
+ "173":
+ "<code>Goldblatt.hyperStepPartition (a : ℝ) (ε : ℕ → ℝ) (NSeq : ℕ → ℕ) : Set ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.7 (p. 153): Hyperfinite partition `P = [P_n]` associated to a real starting point\n`a ∈ ℝ`, step sequence `ε : ℕ → ℝ`, and hypernatural step count `NSeq : ℕ → ℕ`. </code>",
+ "172": "<code>ℕ → ℕ</code>",
+ "171":
+ "<code>Goldblatt.hyperStepPartition_eq_and_hypercard (a : ℝ) {ε : ℕ → ℝ} (hε : 0 &lt; Hyperreal.ofSeq ε) (NSeq : ℕ → ℕ) :\n  hyperStepPartition a ε NSeq = {y | ∃ k &lt; ↑NSeq, y = ↑a + k.toHyperreal * Hyperreal.ofSeq ε} ∧\n    HasHypercard (hyperStepPartition a ε NSeq) ↑NSeq</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Exercise 12.7.1 (pp. 153–154):\nEvery member of the hyperfinite partition `P = hyperStepPartition a ε NSeq` has the form\n`a + k * dx` (with `dx = ofSeq ε`) for a hypernatural `k &lt; N` (`N = (NSeq : ℕ*)`), and when\n`dx &gt; 0`, `P` is hyperfinite of internal cardinality `N`! </code>",
+ "170":
+ "<code>Goldblatt.InternalPartialFun.apply (self : InternalPartialFun) : ℝ* → ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Underlying map `ℝ* → ℝ*`, normalized to `0` outside `dom`. </code>",
+ "17":
+ "<code>Goldblatt.Ch01.IsInfinitesimalIn.{u_1} {F : Type u_1} [Field F] [LinearOrder F] (ε : F) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">An element `ε` of a linearly ordered field `F` is *infinitesimal* (or *infinitely small*,\nallowing `0`) if `|ε| &lt; 1 / n` for every positive natural number `n = 1, 2, 3, ...`\n(Goldblatt §1.1, p. 3). </code>",
+ "169":
+ "<code>Goldblatt.hypersum_mono {F G : InternalPartialFun} (hF : IsInternalFun F) (hG : IsInternalFun G) {A : Set ℝ*}\n  (hA : IsHyperfinite A) (hAF : A ⊆ F.dom) (hAG : A ⊆ G.dom) (hle : ∀ x ∈ A, F.apply x ≤ G.apply x) :\n  hypersum F A ≤ hypersum G A</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.7 Property 4 (p. 153): Monotonicity of hyperfinite sums: if `F(x) ≤ G(x)` for all\n`x ∈ A` (with `A ⊆ F.dom` and `A ⊆ G.dom`), then `∑_{x ∈ A} F(x) ≤ ∑_{x ∈ A} G(x)`. </code>",
+ "168":
+ "<code>Union.union.{u} {α : Type u} [self : Union α] : α → α → α</code><span class=\"sep\"></span><code class=\"docstring\">`a ∪ b` is the union of `a` and `b`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `∪` in identifiers is `union`.</code>",
+ "167":
+ "<code>Disjoint.{u_1} {α : Type u_1} [PartialOrder α] [OrderBot α] (a b : α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Two elements of a lattice are disjoint if their inf is the bottom element.\n  (This generalizes disjoint sets, viewed as members of the subset lattice.)\n\nNote that we define this without reference to `⊓`, as this allows us to talk about orders where\nthe infimum is not unique, or where implementing `Inf` would require additional `Decidable`\narguments. </code>",
+ "166":
+ "<code>Goldblatt.hypersum_union_disjoint {F : InternalPartialFun} (hF : IsInternalFun F) {A B : Set ℝ*} (hA : IsHyperfinite A)\n  (hB : IsHyperfinite B) (hdisj : Disjoint A B) : hypersum F (A ∪ B) = hypersum F A + hypersum F B</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.7 Property 3 (p. 153): For disjoint hyperfinite sets `A` and `B`,\n`∑_{x ∈ A ∪ B} F(x) = ∑_{x ∈ A} F(x) + ∑_{x ∈ B} F(x)`. </code>",
+ "165":
+ "<code>Goldblatt.InternalPartialFun.add (F G : InternalPartialFun) : InternalPartialFun</code><span class=\"sep\"></span><code class=\"docstring\">Pointwise sum `F + G` of two `InternalPartialFun`s (on `F.dom ∩ G.dom`, which equals `F.dom`\nwhen `F.dom = G.dom`). </code>",
+ "164":
+ "<code>Goldblatt.hypersum (F : InternalPartialFun) (A : Set ℝ*) : ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.7 (p. 153): Hyperfinite sum `∑_{x ∈ A} F(x) = [∑_{x ∈ S_n} f_n(x)]` of an\ninternal function `F = [f_n]` over a hyperfinite set `A = [S_n]` (defaulting to `0` if `F` is not\ninternal or `A` is not hyperfinite). </code>",
+ "163":
+ "<code>Goldblatt.InternalPartialFun.dom (self : InternalPartialFun) : Set ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Domain of the partial function on `ℝ*`. </code>",
+ "162":
+ "<code>Goldblatt.IsHyperfinite (X : Set ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.3 (p. 149): An internal set `X ⊆ ℝ*` is **hyperfinite** if `X = [A_n]` with\n`{n ∈ ℕ | A_n is finite} ∈ 𝓕`. </code>",
+ "161":
+ "<code>Goldblatt.IsInternalFun (F : InternalPartialFun) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.1 (p. 147): An `InternalPartialFun` is **internal** if it is of the form `[f_n]`\nfor some sequence `f : ℕ → RealPartialFun`. </code>",
+ "160":
+ "<code>Goldblatt.InternalPartialFun : Type</code><span class=\"sep\"></span><code class=\"docstring\">A partial function from `ℝ*` to `ℝ*` with explicit domain `dom ⊆ ℝ*`, normalized to `0`\noutside `dom`. </code>",
+ "16": "<code>IsInfinitesimalIn ε</code>",
+ "159": "<code>InternalPartialFun</code>",
+ "158":
+ "<code>Goldblatt.hypersum_add {F G : InternalPartialFun} (hF : IsInternalFun F) (hG : IsInternalFun G) {A : Set ℝ*}\n  (hA : IsHyperfinite A) (hAF : A ⊆ F.dom) (hAG : A ⊆ G.dom) : hypersum (F.add G) A = hypersum F A + hypersum G A</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §12.7 Property 2 (p. 153): `∑_{x ∈ A} (F + G)(x) = ∑_{x ∈ A} F(x) + ∑_{x ∈ A} G(x)`\nwhenever `A ⊆ F.dom` and `A ⊆ G.dom`. </code>",
+ "157":
+ "<code>Goldblatt.IsSOpen (U : Set ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §11.14 (p. 143): `U ⊆ ℝ*` is **S-open** if it is a union of S-neighbourhoods of\npositive standard radius. </code>",
+ "156":
+ "<code>Goldblatt.isSOpen_iff_forall_halo_subset_of_isInternal {B : Set ℝ*} (hB : IsInternal B) :\n  IsSOpen B ↔ ∀ r ∈ B, halo r ⊆ B</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Theorem 11.14.4 (pp. 144–145): **An internal set `B ⊆ ℝ*` is S-open if and only if\nit contains the halo of each of its points!** </code>",
+ "155":
+ "<code>Goldblatt.IsHyperOpen (X : Set ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §11.14 (p. 143): An internal set `X = [A_n]` is **hyper-open** if `A_n` is open in `ℝ`\nfor `𝓕`-almost all `n`. </code>",
+ "154":
+ "<code>Goldblatt.IsIntervalOpen (U : Set ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §11.14 (p. 143): `U ⊆ ℝ*` is **interval-open** if every `x ∈ U` lies in some\nhyperreal open interval `(a, b) ⊆ U`. </code>",
+ "153":
+ "<code>Goldblatt.isIntervalOpen_iff_isHyperOpen_of_isInternal {X : Set ℝ*} (hX : IsInternal X) :\n  IsIntervalOpen X ↔ IsHyperOpen X</code>",
+ "152":
+ "<code>Goldblatt.IsInternal (X : Set ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A subset `X ⊆ ℝ*` is **internal** if `X = [A_n]` for some sequence `A : ℕ → Set ℝ`. </code>",
+ "151":
+ "<code>Goldblatt.isInternal_starSet (A : Set ℝ) : IsInternal (starSet A)</code>",
+ "150":
+ "<code>Filter.Eventually.{u_1} {α : Type u_1} (p : α → Prop) (f : Filter α) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`f.Eventually p` or `∀ᶠ x in f, p x` mean that `{x | p x} ∈ f`. E.g., `∀ᶠ x in atTop, p x`\nmeans that `p` holds true for sufficiently large `x`. </code>",
+ "15":
+ "<code class=\"docstring\">The syntax `variable (X Y ... Z : Type*)` creates a new distinct implicit universe variable\n`&gt; 0` for each variable in the sequence. </code>",
+ "149":
+ "<code>Goldblatt.internalSet (A : ℕ → Set ℝ) : Set ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §11.1 (p. 125): The internal subset `[A_n] ⊆ ℝ*` determined by a sequence\n`A : ℕ → Set ℝ`, defined via `Germ.LiftRel (· ∈ ·)`. </code>",
+ "148":
+ "<code>Hyperreal.ofSeq (f : ℕ → ℝ) : ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Construct a hyperreal number from a sequence of real numbers. </code>",
+ "147": "<code>ℕ → Set ℝ</code>",
+ "146":
+ "<code>Goldblatt.ofSeq_mem_internalSet {r : ℕ → ℝ} {A : ℕ → Set ℝ} :\n  Hyperreal.ofSeq r ∈ internalSet A ↔ ∀ᶠ (n : ℕ) in ↑(Filter.hyperfilter ℕ), r n ∈ A n</code>",
+ "145":
+ "<code>Goldblatt.Ch10.IsIntervalOpen (A : Set ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §10.5 (p. 121): A subset `A ⊆ ℝ*` is *interval-open* if it is a union of hyperreal\nopen intervals `(a, b) ⊆ ℝ*`. </code>",
+ "144":
+ "<code>IsOpen.{u} {X : Type u} [TopologicalSpace X] : Set X → Prop</code><span class=\"sep\"></span><code class=\"docstring\">`IsOpen s` means that `s` is open in the ambient topological space on `X` </code>",
+ "143":
+ "<code>Goldblatt.Ch10.isIntervalOpen_starSet_of_isOpen {A : Set ℝ} (hA : IsOpen A) : IsIntervalOpen (Goldblatt.starSet A)</code><span class=\"sep\"></span><code class=\"docstring\">**Goldblatt Exercise 10.5.2(i)** (p. 122): For every open subset `A ⊆ ℝ`, `*A` (`starSet A`)\nis interval-open in `ℝ*`. </code>",
+ "142":
+ "<code>Goldblatt.Ch10.intervalTopology : TopologicalSpace ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">**Goldblatt §10.5** (p. 121): The *interval topology* on `ℝ*`, whose open sets are `IsIntervalOpen`. </code>",
+ "141": "<code>Set ℝ*</code>",
+ "140":
+ "<code>TopologicalSpace.generateFrom.{u} {α : Type u} (g : Set (Set α)) : TopologicalSpace α</code><span class=\"sep\"></span><code class=\"docstring\">The smallest topological space containing the collection `g` of basic sets </code>",
+ "14":
+ "<code>Inv.inv.{u} {α : Type u} [self : Inv α] : α → α</code><span class=\"sep\"></span><code class=\"docstring\">`a⁻¹` computes the inverse of `a`.\nThe meaning of this notation is type-dependent. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `⁻¹` in identifiers is `inv`.</code>",
+ "139":
+ "<code>Goldblatt.Ch10.generateFrom_realRadiusNhds_eq_intervalTopology :\n  TopologicalSpace.generateFrom {U | ∃ r ε, 0 &lt; ε ∧ U = realRadiusNhds r ε} = intervalTopology</code><span class=\"sep\"></span><code class=\"docstring\">**Goldblatt §10.5** (pp. 121–122): Any topology on `ℝ*` in which every real-radius\nneighbourhood is open must contain every hyperreal open interval `(a, b)` and hence every\ninterval-open set; thus `generateFrom {realRadiusNhds r ε | ε &gt; 0} = intervalTopology`! </code>",
+ "138":
+ "<code>Goldblatt.halo (b : ℝ*) : Set ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §5.4 (p. 52): The halo (monad) `hal(b) = {c ∈ ℝ* | b ≈ₕ c}`. </code>",
+ "137":
+ "<code>Goldblatt.Ch10.realRadiusNhds (r : ℝ*) (ε : ℝ) : Set ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §10.5 (p. 120): The *real-radius neighbourhood* `(r - ε, r + ε) ⊆ ℝ*` of `r ∈ ℝ*`\nwith real radius `ε ∈ ℝ`. </code>",
+ "136":
+ "<code>Goldblatt.Ch10.biInter_realRadiusNhds_eq_halo (r : ℝ*) : ⋂ ε, ⋂ (_ : 0 &lt; ε), realRadiusNhds r ε = Goldblatt.halo r</code><span class=\"sep\"></span><code class=\"docstring\">**Goldblatt §10.5** (p. 121): The intersection of all *centered* positive real-radius\nneighbourhoods `(r - ε, r + ε)` (`ε &gt; 0` in `ℝ`) of `r ∈ ℝ*` equals `hal(r)`. </code>",
+ "135":
+ "<code>HDiv.hDiv.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HDiv α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a / b` computes the result of dividing `a` by `b`.\nThe meaning of this notation is type-dependent.\n* For most types like `Nat`, `Int`, `Rat`, `Real`, `a / 0` is defined to be `0`.\n* For `Nat`, `a / b` rounds downwards.\n* For `Int`, `a / b` rounds downwards if `b` is positive or upwards if `b` is negative.\n  It is implemented as `Int.ediv`, the unique function satisfying\n  `a % b + b * (a / b) = a` and `0 ≤ a % b &lt; natAbs b` for `b ≠ 0`.\n  Other rounding conventions are available using the functions\n  `Int.fdiv` (floor rounding) and `Int.tdiv` (truncation rounding).\n* For `Float`, `a / 0` follows the IEEE 754 semantics for division,\n  usually resulting in `inf` or `nan`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `/` in identifiers is `div`.</code>",
+ "134":
+ "<code>Goldblatt.Ch09.hyperSampleAverage (f : ℝ → ℝ) (a b : ℝ) (N : ℕ*) : ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §9.5 (p. 112): Hypersequence extension `Av(N)` for `N ∈ ℕ*` via `starSeq`. </code>",
+ "133":
+ "<code>Goldblatt.Ch09.hyperSampleAverage_infClose_average_integral {a b : ℝ} {f : ℝ → ℝ} (hab : a &lt; b)\n  (hf : ContinuousOn f (Set.Icc a b)) {N : ℕ*} (hN : Goldblatt.IsUnlimitedNat N) :\n  hyperSampleAverage f a b N ≈ₕ ↑(1 / (b - a) * ∫ (x : ℝ) in a..b, f x) ∧\n    Goldblatt.shadow (hyperSampleAverage f a b N) = 1 / (b - a) * ∫ (x : ℝ) in a..b, f x</code><span class=\"sep\"></span><code class=\"docstring\">**Goldblatt §9.5 Exercise on Average Function Values (p. 112)**:\nIf `f` is continuous on `[a, b]` (`a &lt; b`) and `N ∈ ℕ*` is unlimited, then\n`Av(N) ≈ₕ (1 / (b - a)) * ∫_a^b f(x) dx` and `sh(Av(N)) = (1 / (b - a)) * ∫_a^b f(x) dx`! </code>",
+ "132":
+ "<code>intervalIntegral.{u_5} {E : Type u_5} [NormedAddCommGroup E] [NormedSpace ℝ E] (f : ℝ → E) (a b : ℝ)\n  (μ : MeasureTheory.Measure ℝ) : E</code><span class=\"sep\"></span><code class=\"docstring\">The interval integral `∫ x in a..b, f x ∂μ` is defined\nas `∫ x in Ioc a b, f x ∂μ - ∫ x in Ioc b a, f x ∂μ`. If `a ≤ b`, then it equals\n`∫ x in Ioc a b, f x ∂μ`, otherwise it equals `-∫ x in Ioc b a, f x ∂μ`. </code>",
+ "131":
+ "<code>HSub.hSub.{u, v, w} {α : Type u} {β : Type v} {γ : outParam (Type w)} [self : HSub α β γ] : α → β → γ</code><span class=\"sep\"></span><code class=\"docstring\">`a - b` computes the difference of `a` and `b`.\nThe meaning of this notation is type-dependent.\n* For natural numbers, this operator saturates at 0: `a - b = 0` when `a ≤ b`. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `-` in identifiers is `sub` (when used as a binary operator).</code>",
+ "130":
+ "<code>Goldblatt.Ch09.hyperRiemannSum (f : ℝ → ℝ) (a b : ℝ) (N : ℕ*) : ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Hyperfinite equal-subdivision Riemann sum `S_a^b(f, N)` for `N ∈ ℕ*` via `starSeq`. </code>",
+ "13":
+ "<code>Goldblatt.Ch01.IsInfiniteIn.{u_1} {F : Type u_1} [Field F] [LinearOrder F] (ω : F) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">An element `ω` of a linearly ordered field `F` is *infinitely large* (or *infinite*) if\n`|ω| &gt; n` for every positive natural number `n = 1, 2, 3, ...` (Goldblatt §1.1, p. 3). </code>",
+ "129":
+ "<code>HasDerivAt.{u, v} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [AddCommGroup F] [Module 𝕜 F]\n  [TopologicalSpace F] [ContinuousSMul 𝕜 F] (f : 𝕜 → F) (f' : F) (x : 𝕜) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`f` has the derivative `f'` at the point `x`.\n\nThat is, `f x' = f x + (x' - x) • f' + o(x' - x)` where `x'` converges to `x`.\n</code>",
+ "128":
+ "<code>Goldblatt.Ch09.ftc_part2_via_hyperfinite_telescoping {a b : ℝ} {G f : ℝ → ℝ} (hab : a ≤ b)\n  (hf : ContinuousOn f (Set.Icc a b)) (hG_cont : ContinuousOn G (Set.Icc a b))\n  (hG_deriv : ∀ x ∈ Set.Ioo a b, HasDerivAt G (f x) x) {N : ℕ*} (hN : Goldblatt.IsUnlimitedNat N) :\n  hyperRiemannSum f a b N ≈ₕ ↑(G b - G a) ∧ ∫ (x : ℝ) in a..b, f x = G b - G a</code><span class=\"sep\"></span><code class=\"docstring\">**Nonstandard Proof 2 of FTC Part 2 (Direct Hyperfinite Telescoping)**:\nWriting `G(b) - G(a) = ∑_{k &lt; n} (G(x_{k+1}) - G(x_k)) = ∑_{k &lt; n} (f(x_k) Δx + η_k Δx)` via MVT\nand lifting to any unlimited `N ∈ ℕ*`, microcontinuity of `f` directly yields\n`hyperRiemannSum f a b N ≈ₕ G(b) - G(a)` and `∫ x in a..b, f x = G(b) - G(a)` (without using\nFTC Part 1)! </code>",
+ "127":
+ "<code>deriv.{u, v} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [AddCommGroup F] [Module 𝕜 F] [TopologicalSpace F]\n  (f : 𝕜 → F) (x : 𝕜) : F</code><span class=\"sep\"></span><code class=\"docstring\">Derivative of `f` at the point `x`, if it exists.  Zero otherwise.\n\nIf the derivative exists (i.e., `∃ f', HasDerivAt f f' x`), then\n`f x' = f x + (x' - x) • deriv f x + o(x' - x)` where `x'` converges to `x`.\n</code>",
+ "126":
+ "<code>DifferentiableAt.{u_1, u_2, u_3} (𝕜 : Type u_1) [NontriviallyNormedField 𝕜] {E : Type u_2} [AddCommGroup E] [Module 𝕜 E]\n  [TopologicalSpace E] {F : Type u_3} [AddCommGroup F] [Module 𝕜 F] [TopologicalSpace F] (f : E → F) (x : E) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function `f` is differentiable at a point `x` if it admits a derivative there (possibly\nnon-unique). </code>",
+ "125":
+ "<code>Goldblatt.Ch08.sqMulSinInv (x : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt Exercise 8.12(2) (p. 104): The pathological differentiable function\n`f(x) = x² sin(1/x)` for `x ≠ 0` and `f(0) = 0`. </code>",
+ "124":
+ "<code>Goldblatt.Ch08.sqMulSinInv_deriv_exists_and_not_continuousAt_zero :\n  HasNSCDerivAt sqMulSinInv 0 0 ∧ (∀ (x : ℝ), DifferentiableAt ℝ sqMulSinInv x) ∧ ¬ContinuousAt (deriv sqMulSinInv) 0</code><span class=\"sep\"></span><code class=\"docstring\">**Goldblatt Exercise 8.12(2a) (p. 104)**: `sqMulSinInv` is differentiable everywhere (in\nparticular `deriv sqMulSinInv 0 = 0`), yet its derivative `deriv sqMulSinInv` is NOT continuous\nat `0`. </code>",
+ "123":
+ "<code>Goldblatt.IsInfinitesimal (b : ℝ*) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §5.1 (p. 50): `b ∈ ℝ*` is infinitesimal (`b ∈ 𝕀`) if `|b| &lt; r` for every positive real `r`. </code>",
+ "122":
+ "<code>Goldblatt.Ch08.IsWellInsideIoo (x : ℝ*) (a b : ℝ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §8.11 (p. 103): A hyperreal `x ∈ ℝ*` is *well inside* `*(a, b)` if `a &lt; x &lt; b`\nand `x` is not infinitely close to either endpoint `a` or `b`. </code>",
+ "121":
+ "<code>Goldblatt.Ch08.HasNSCDerivAt (f : ℝ → ℝ) (f' x : ℝ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §8.1, Theorem 8.1.1 (p. 91): Nonstandard characterization of `f'(x) = f'`:\nfor every nonzero infinitesimal `Δx ∈ ℝ*`, the hyperreal Newton quotient\n`(*f(x + Δx) - f(x)) / Δx` is infinitely close to `f'`. </code>",
+ "120":
+ "<code>Set.Ioo.{u_1} {α : Type u_1} [Preorder α] (a b : α) : Set α</code><span class=\"sep\"></span><code class=\"docstring\">`Ioo a b` is the left-open right-open interval $(a, b)$. </code>",
+ "12":
+ "<code>Iff (a b : Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">If and only if, or logical bi-implication. `a ↔ b` means that `a` implies `b` and vice versa.\nBy `propext`, this implies that `a` and `b` are equal and hence any expression involving `a`\nis equivalent to the corresponding expression with `b` instead.\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `↔` in identifiers is `iff`.\n\n * The recommended spelling of `&lt;-&gt;` in identifiers is `iff` (prefer `↔` over `&lt;-&gt;`).</code>",
+ "119":
+ "<code>Goldblatt.Ch08.continuousOn_deriv_iff_wellInside_incremental_eq {f f' : ℝ → ℝ} {a b : ℝ}\n  (hderiv : ∀ t ∈ Set.Ioo a b, HasNSCDerivAt f (f' t) t) :\n  ContinuousOn f' (Set.Ioo a b) ↔\n    ∀ (x : ℝ*),\n      IsWellInsideIoo x a b →\n        ∀ (Δx : ℝ*),\n          Goldblatt.IsInfinitesimal Δx →\n            ∃ η,\n              Goldblatt.IsInfinitesimal η ∧\n                Goldblatt.starFun f (x + Δx) = Goldblatt.starFun f x + Goldblatt.starFun f' x * Δx + η * Δx</code><span class=\"sep\"></span><code class=\"docstring\">**Goldblatt Theorem 8.11.1 (Extending the Incremental Equation, pp. 103–104)**:\nLet `f` have derivative `f'` on `(a, b)`. Then `f'` is continuous on `(a, b)` if and only if for\nevery hyperreal `x` well inside `*(a, b)` and every infinitesimal `Δx`,\n`*f(x + Δx) = *f(x) + *f'(x) Δx + η Δx` for some infinitesimal `η`. </code>",
+ "118":
+ "<code>Goldblatt.Ch08.HasNSCDerivWithinAt (f : ℝ → ℝ) (f' : ℝ) (A : Set ℝ) (x : ℝ) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">Nonstandard derivative of `f` within a subset `A ⊆ ℝ` at `x ∈ ℝ`: for every nonzero\ninfinitesimal `Δx` with `x + Δx ∈ *A`, the Newton quotient is infinitely close to `f'`. </code>",
+ "117":
+ "<code>HasDerivWithinAt.{u, v} {𝕜 : Type u} [NontriviallyNormedField 𝕜] {F : Type v} [AddCommGroup F] [Module 𝕜 F]\n  [TopologicalSpace F] [ContinuousSMul 𝕜 F] (f : 𝕜 → F) (f' : F) (s : Set 𝕜) (x : 𝕜) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`f` has the derivative `f'` at the point `x` within the subset `s`.\n\nThat is, `f x' = f x + (x' - x) • f' + o(x' - x)` where `x'` converges to `x` inside `s`.\n</code>",
+ "116":
+ "<code>Goldblatt.Ch08.hasDerivWithinAt_iff_hasNSCDerivWithinAt {f : ℝ → ℝ} {f' : ℝ} {A : Set ℝ} {x : ℝ} :\n  HasDerivWithinAt f f' A x ↔ HasNSCDerivWithinAt f f' A x</code><span class=\"sep\"></span><code class=\"docstring\">Equivalence between `HasDerivWithinAt` and `HasNSCDerivWithinAt` on any subset `A ⊆ ℝ`. </code>",
+ "115":
+ "<code>Goldblatt.starFun (f : ℝ → ℝ) : ℝ* → ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §3.11 (p. 30): Extension `*f : ℝ* → ℝ*` of `f : ℝ → ℝ`. </code>",
+ "114":
+ "<code>Goldblatt.Ch07.starFunSeq (F : ℕ → ℝ → ℝ) : ℕ* → ℝ* → ℝ*</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §7.12 (p. 86): Extension of a sequence of functions `F : ℕ → ℝ → ℝ` to a\nhypersequence of functions `starFunSeq F : ℕ* → ℝ* → ℝ*` (`*F(N, x)`). </code>",
+ "113": "<code>ℕ → ℝ → ℝ</code>",
+ "112":
+ "<code>Goldblatt.Ch07.cauchy_sum_theorem_nonstandard {u : ℕ → ℝ → ℝ} {s : ℝ → ℝ} {A : Set ℝ} {c : ℝ} (hc : c ∈ A)\n  (hu : ∀ (k : ℕ), ContinuousOn (u k) A) {N : ℕ*} (_hN : Goldblatt.IsUnlimitedNat N)\n  (hconv_halo : ∀ x ∈ Goldblatt.starSet A, x ≈ₕ ↑c → starFunSeq (partialSumFun u) N x ≈ₕ Goldblatt.starFun s x) :\n  ContinuousWithinAt s A c</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §7.15 (p. 90) — **Cauchy's 1821 Sum Theorem Vindicated** (Robinson / Cleave 1971 /\nLakatos 1978):\nIf each term `u k` of the series `u₀ + u₁ + …` is continuous on `A ⊆ ℝ`, and in the infinitesimal\nneighborhood `hal(c) ∩ *A` of `c ∈ A` the extended partial sum `*S_N(x)` (for some unlimited\n`N ∈ ℕ*`) is infinitely close to `*s(x)`, then the sum `s` IS continuous within `A` at `c`! </code>",
+ "111":
+ "<code>ContinuousWithinAt.{u_1, u_2} {X : Type u_1} {Y : Type u_2} [TopologicalSpace X] [TopologicalSpace Y] (f : X → Y)\n  (s : Set X) (x : X) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A function between topological spaces is continuous at a point `x₀` within a subset `s`\nif `f x` tends to `f x₀` when `x` tends to `x₀` while staying within `s`. </code>",
+ "110":
+ "<code>Not (a : Prop) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`Not p`, or `¬p`, is the negation of `p`. It is defined to be `p → False`,\nso if your goal is `¬p` you can use `intro h` to turn the goal into\n`h : p ⊢ False`, and if you have `hn : ¬p` and `h : p` then `hn h : False`\nand `(hn h).elim` will prove anything.\nFor more information: [Propositional Logic](https://lean-lang.org/theorem_proving_in_lean4/propositions_and_proofs.html#propositional-logic)\n\n\nConventions for notations in identifiers:\n\n * The recommended spelling of `¬` in identifiers is `not`.</code>",
+ "11":
+ "<code>Goldblatt.Ch01.IsNonzeroInfinitesimalIn.{u_1} {F : Type u_1} [Field F] [LinearOrder F] (ε : F) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">A *nonzero infinitesimal* in a linearly ordered field `F` is a nonzero element `ε ≠ 0`\nsatisfying `|ε| &lt; 1 / n` for all `n = 1, 2, 3, ...` (Goldblatt §1.1, p. 3). </code>",
+ "109":
+ "<code>Goldblatt.Ch07.cauchySeriesSum (x : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Sum function of `∑_{k=0}^∞ (1 - x) x^k` on `[0, 1]`: `1` on `[0, 1)` and `0` at `x = 1`. </code>",
+ "108":
+ "<code>nhds.{u_3} {X : Type u_3} [TopologicalSpace X] (x : X) : Filter X</code><span class=\"sep\"></span><code class=\"docstring\">A set is called a neighborhood of `x` if it contains an open set around `x`. The set of all\nneighborhoods of `x` forms a filter, the neighborhood filter at `x`, is here defined as the\ninfimum over the principal filters of all open sets containing `x`. </code>",
+ "107":
+ "<code>Filter.atTop.{u_2} {α : Type u_2} [Preorder α] : Filter α</code><span class=\"sep\"></span><code class=\"docstring\">`atTop` is the filter representing the limit `→ ∞` on an ordered set.\nIt is generated by the collection of up-sets `{b | a ≤ b}`.\n(The preorder need not have a top element for this to be well defined,\nand indeed is trivial when a top element `x` exists, i.e., it coincides with `pure x`.) </code>",
+ "106":
+ "<code>Goldblatt.Ch07.partialSumFun (u : ℕ → ℝ → ℝ) (n : ℕ) (x : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Partial sum `partialSumFun u n x = ∑_{k &lt; n} u k x` of a series of functions `u : ℕ → ℝ → ℝ`. </code>",
+ "105":
+ "<code>Filter.Tendsto.{u_1, u_2} {α : Type u_1} {β : Type u_2} (f : α → β) (l₁ : Filter α) (l₂ : Filter β) : Prop</code><span class=\"sep\"></span><code class=\"docstring\">`Filter.Tendsto` is the generic \"limit of a function\" predicate.\n`Tendsto f l₁ l₂` asserts that for every `l₂` neighborhood `a`,\nthe `f`-preimage of `a` is an `l₁` neighborhood. </code>",
+ "104":
+ "<code>Goldblatt.Ch07.cauchySeriesTerm (k : ℕ) (x : ℝ) : ℝ</code><span class=\"sep\"></span><code class=\"docstring\">Classical geometric-telescoping series counterexample `u_k(x) = (1 - x) x^k` on `[0, 1]`\n(illustrating why the standard reading of Cauchy's 1821 sum theorem fails without uniform or\nhalo convergence, §7.15, p. 90). </code>",
+ "103":
+ "<code>Goldblatt.Ch07.cauchySeries_counterexample :\n  (∀ (k : ℕ), ContinuousOn (cauchySeriesTerm k) (Set.Icc 0 1)) ∧\n    (∀ x ∈ Set.Icc 0 1,\n        Filter.Tendsto (fun n ↦ partialSumFun cauchySeriesTerm n x) Filter.atTop (nhds (cauchySeriesSum x))) ∧\n      ¬ContinuousWithinAt cauchySeriesSum (Set.Icc 0 1) 1</code><span class=\"sep\"></span><code class=\"docstring\">Every term `cauchySeriesTerm k` is continuous on `[0, 1]` and the series converges pointwise on\n`[0, 1]` to `cauchySeriesSum`, yet `cauchySeriesSum` is discontinuous at `x = 1`! </code>",
+ "102":
+ "<code>Goldblatt.Ch07.extreme_value_Icc_nonstandard {f : ℝ → ℝ} {a b : ℝ} (hab : a ≤ b) (hf : ContinuousOn f (Set.Icc a b)) :\n  ∃ c ∈ Set.Icc a b, ∃ d ∈ Set.Icc a b, ∀ x ∈ Set.Icc a b, f c ≤ f x ∧ f x ≤ f d</code><span class=\"sep\"></span><code class=\"docstring\">Goldblatt §7.6 (p. 80): Full **Extreme Value Theorem** on `[a, b]`: `f` attains both an\nabsolute minimum `f c` and an absolute maximum `f d` on `[a, b]`. </code>",
+ "101":
+ "<code>Max.max.{u} {α : Type u} [self : Max α] : α → α → α</code><span class=\"sep\"></span><code class=\"docstring\">Returns the greater of its two arguments. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `max` in identifiers is `max`.\n\n * The recommended spelling of `⊔` in identifiers is `sup` (`⊔` is the preferred notation for `max` when the type is not linearly ordered.).</code>",
+ "100":
+ "<code>Min.min.{u} {α : Type u} [self : Min α] : α → α → α</code><span class=\"sep\"></span><code class=\"docstring\">Returns the lesser of its two arguments. \n\nConventions for notations in identifiers:\n\n * The recommended spelling of `min` in identifiers is `min`.\n\n * The recommended spelling of `⊓` in identifiers is `inf` (`⊓` is the preferred notation for `min` when the type is not linearly ordered.).</code>",
+ "10": "<code>F</code>",
+ "1":
+ "<code class=\"docstring\">Makes names from other namespaces visible without writing the namespace prefix.\n\nNames that are made available with `open` are visible within the current `section` or `namespace`\nblock. This makes referring to (type) definitions and theorems easier, but note that it can also\nmake [scoped instances], notations, and attributes from a different namespace available.\n\nThe `open` command can be used in a few different ways:\n\n* `open Some.Namespace.Path1 Some.Namespace.Path2` makes all non-protected names in\n  `Some.Namespace.Path1` and `Some.Namespace.Path2` available without the prefix, so that\n  `Some.Namespace.Path1.x` and `Some.Namespace.Path2.y` can be referred to by writing only `x` and\n  `y`.\n\n* `open Some.Namespace.Path hiding def1 def2` opens all non-protected names in `Some.Namespace.Path`\n  except `def1` and `def2`.\n\n* `open Some.Namespace.Path (def1 def2)` only makes `Some.Namespace.Path.def1` and\n  `Some.Namespace.Path.def2` available without the full prefix, so `Some.Namespace.Path.def3` would\n  be unaffected.\n\n  This works even if `def1` and `def2` are `protected`.\n\n* `open Some.Namespace.Path renaming def1 → def1', def2 → def2'` same as `open Some.Namespace.Path\n  (def1 def2)` but `def1`/`def2`'s names are changed to `def1'`/`def2'`.\n\n  This works even if `def1` and `def2` are `protected`.\n\n* `open scoped Some.Namespace.Path1 Some.Namespace.Path2` **only** opens [scoped instances],\n  notations, and attributes from `Namespace1` and `Namespace2`; it does **not** make any other name\n  available.\n\n* `open &lt;any of the open shapes above&gt; in` makes the names `open`-ed visible only in the next\n  command or expression.\n\n[scoped instance]: https://lean-lang.org/theorem_proving_in_lean4/type_classes.html#scoped-instances\n(Scoped instances in Theorem Proving in Lean)\n\n\n## Examples\n\n```lean\n/-- SKI combinators https://en.wikipedia.org/wiki/SKI_combinator_calculus -/\nnamespace Combinator.Calculus\n  def I (a : α) : α := a\n  def K (a : α) : β → α := fun _ =&gt; a\n  def S (x : α → β → γ) (y : α → β) (z : α) : γ := x z (y z)\nend Combinator.Calculus\n\nsection\n  -- open everything under `Combinator.Calculus`, *i.e.* `I`, `K` and `S`,\n  -- until the section ends\n  open Combinator.Calculus\n\n  theorem SKx_eq_K : S K x = I := rfl\nend\n\n-- open everything under `Combinator.Calculus` only for the next command (the next `theorem`, here)\nopen Combinator.Calculus in\ntheorem SKx_eq_K' : S K x = I := rfl\n\nsection\n  -- open only `S` and `K` under `Combinator.Calculus`\n  open Combinator.Calculus (S K)\n\n  theorem SKxy_eq_y : S K x y = y := rfl\n\n  -- `I` is not in scope, we have to use its full path\n  theorem SKxy_eq_Iy : S K x y = Combinator.Calculus.I y := rfl\nend\n\nsection\n  open Combinator.Calculus\n    renaming\n      I → identity,\n      K → konstant\n\n  #check identity\n  #check konstant\nend\n\nsection\n  open Combinator.Calculus\n    hiding S\n\n  #check I\n  #check K\nend\n\nsection\n  namespace Demo\n    inductive MyType\n    | val\n\n    namespace N1\n      scoped infix:68 \" ≋ \" =&gt; BEq.beq\n\n      scoped instance : BEq MyType where\n        beq _ _ := true\n\n      def Alias := MyType\n    end N1\n  end Demo\n\n  -- bring `≋` and the instance in scope, but not `Alias`\n  open scoped Demo.N1\n\n  #check Demo.MyType.val == Demo.MyType.val\n  #check Demo.MyType.val ≋ Demo.MyType.val\n  -- #check Alias -- unknown identifier 'Alias'\nend\n```\n</code>",
+ "0":
+ "<code class=\"docstring\">A `section`/`end` pair delimits the scope of `variable`, `include`, `open`, `set_option`, and `local`\ncommands. Sections can be nested. `section &lt;id&gt;` provides a label to the section that has to appear\nwith the matching `end`. In either case, the `end` can be omitted, in which case the section is\nclosed at the end of the file.\n</code>"}

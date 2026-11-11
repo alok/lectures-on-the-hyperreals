@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 390">
+  
+  <defs>
+    <linearGradient id="bgCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="goldBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <marker id="arrowSilver" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#cbd5e1"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="390" rx="20" fill="url(#bgCard)"/>
+  <text x="36" y="42" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Part V Panorama — Combinatorics, Completions &amp; Hyperfinite Approximation</text>
+  <text x="36" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13">How enlargements unify Ramsey theory, Banach/p-adic completions, Stone duality, and Hahn–Banach</text>
+
+  <!-- Panel 1: Ch 17 Ramsey -->
+  <rect x="36" y="90" width="414" height="128" rx="14" fill="#0b1220" stroke="#f87171" stroke-opacity="0.6"/>
+  <text x="56" y="116" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CH. 17 · ULTRAFILTER RAMSEY &amp; PARIS–HARRINGTON</text>
+  <text x="56" y="144" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="12">Nonstandard witness ω ∈ *ℕ colors pairs (n, ω)</text>
+  <text x="56" y="168" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Steps: Infinite Ramsey ⟹ Compactness Transfer ⟹</text>
+  <text x="56" y="190" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12">Finite Ramsey &amp; Large-Set Paris–Harrington (|H| &gt; min H)</text>
+
+  <!-- Panel 2: Ch 18 Nonstandard Hulls & p-adics -->
+  <rect x="470" y="90" width="414" height="128" rx="14" fill="#0b1220" stroke="#38bdf8" stroke-opacity="0.6"/>
+  <text x="490" y="116" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CH. 18 · COMPLETION BY ENLARGEMENT</text>
+  <text x="490" y="144" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="12">M̂ = M_fin / ≈  (Banach &amp; Metric Nonstandard Hulls)</text>
+  <text x="490" y="168" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Same quotient builds ℤ_p = *ℤ / ⋂ p^n *ℤ, ℚ_p = *ℚ_fin / 𝕀_p,</text>
+  <text x="490" y="190" fill="#bae6fd" font-family="ui-monospace, monospace" font-size="12">and formal power series R⟦X⟧ from hyperpolynomials!</text>
+
+  <!-- Panel 3: Ch 19 Graph Coloring & Boolean Algebras -->
+  <rect x="36" y="236" width="414" height="128" rx="14" fill="#0b1220" stroke="#34d399" stroke-opacity="0.6"/>
+  <text x="56" y="262" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CH. 19A · DE BRUIJN–ERDŐS &amp; STONE DUALITY</text>
+  <text x="56" y="290" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="12">Every finite H ⊆ G k-colorable ⟹ hyperfinite G⁺ k-colorable</text>
+  <text x="56" y="314" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Every Boolean algebra B embeds into hyperfinite B⁺ = *𝒫(F₀),</text>
+  <text x="56" y="336" fill="#6ee7b7" font-family="ui-monospace, monospace" font-size="12">whose internal atoms yield Stone's Representation Theorem!</text>
+
+  <!-- Panel 4: Ch 19 Hahn-Banach -->
+  <rect x="470" y="236" width="414" height="128" rx="14" fill="#0b1220" stroke="#fbbf24" stroke-opacity="0.65"/>
+  <text x="490" y="262" fill="#fde68a" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CH. 19B · HYPERFINITE HAHN–BANACH EXTENSION</text>
+  <text x="490" y="290" fill="#e2e8f0" font-family="ui-monospace, monospace" font-size="12">Finite-dim induction transfers to hyperfinite span V⁺ ⊇ V</text>
+  <text x="490" y="314" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="12">Extend *f : *U ∩ V⁺ → *ℝ dominated by *p, then take shadow:</text>
+  <text x="490" y="336" fill="#fbbf24" font-family="ui-monospace, monospace" font-size="12">F(v) := sh( Φ(v) )  gives exact global functional on V!</text>
+</svg>

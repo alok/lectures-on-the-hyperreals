@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400">
+  
+  <defs>
+    <linearGradient id="bgCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="goldBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <marker id="arrowSilver" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#cbd5e1"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="400" rx="20" fill="url(#bgCard)"/>
+  <text x="36" y="42" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Zakon Cumulative Superstructures V(X) &amp; Enlargement Transfer</text>
+  <text x="36" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Every classical space, topology, measure, and operator lives at a finite rank V_n(X) and transfers via Δ₀ formulas</text>
+
+  <!-- Left hierarchy V(X) -->
+  <rect x="36" y="90" width="356" height="280" rx="16" fill="#0b1220" stroke="#334155"/>
+  <text x="214" y="116" text-anchor="middle" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="12" font-weight="700">STANDARD SUPERSTRUCTURE V(X)</text>
+  <polygon points="214,344 86,144 342,144" fill="#fbbf24" fill-opacity="0.09" stroke="#fbbf24" stroke-width="1.8"/>
+  <line x1="122" y1="200" x2="306" y2="200" stroke="#fbbf24" stroke-opacity="0.4" stroke-dasharray="4 3"/>
+  <line x1="154" y1="252" x2="274" y2="252" stroke="#fbbf24" stroke-opacity="0.4" stroke-dasharray="4 3"/>
+  <line x1="184" y1="298" x2="244" y2="298" stroke="#fbbf24" stroke-opacity="0.4" stroke-dasharray="4 3"/>
+  <text x="214" y="176" text-anchor="middle" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12">V₃(X) : topologies, measures, Duals</text>
+  <text x="214" y="230" text-anchor="middle" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12">V₂(X) : functions &amp; relations (Kuratowski)</text>
+  <text x="214" y="278" text-anchor="middle" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12">V₁(X) = X ∪ 𝒫(X)</text>
+  <text x="214" y="324" text-anchor="middle" fill="#f8fafc" font-family="ui-monospace, monospace" font-size="12">V₀(X) = X (Individuals)</text>
+
+  <!-- Transfer Bridge -->
+  <path d="M 356 218 C 424 176, 480 176, 548 218" fill="none" stroke="#fbbf24" stroke-width="2.8" marker-end="url(#arrowGold)"/>
+  <text x="452" y="176" text-anchor="middle" fill="#fde68a" font-family="ui-monospace, monospace" font-size="13" font-weight="700">*-Transform</text>
+  <text x="452" y="194" text-anchor="middle" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="11">φ ⟺ *φ (Δ₀)</text>
+
+  <!-- Right hierarchy V(*X) -->
+  <rect x="508" y="90" width="376" height="280" rx="16" fill="#0b1220" stroke="#334155"/>
+  <text x="696" y="116" text-anchor="middle" fill="#7dd3fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700">NONSTANDARD V(*X) — INTERNAL vs. EXTERNAL</text>
+  <!-- Outer full cone V(*X) -->
+  <polygon points="696,344 534,144 858,144" fill="#8b5cf6" fill-opacity="0.12" stroke="#a78bfa" stroke-dasharray="5 3"/>
+  <!-- Inner internal cone *V(X) -->
+  <polygon points="696,344 588,144 804,144" fill="#38bdf8" fill-opacity="0.16" stroke="#38bdf8" stroke-width="2"/>
+  <text x="696" y="182" text-anchor="middle" fill="#bae6fd" font-family="ui-monospace, monospace" font-size="12" font-weight="700">Internal Universe ℐ = ⋃ *V_n(X)</text>
+  <text x="696" y="206" text-anchor="middle" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">Closed under internal comprehension &amp; hyperfinite</text>
+  <text x="696" y="224" text-anchor="middle" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="11">enlargement witnesses b ∈ ∩ &#123; *R(x) : x ∈ dom R &#125;</text>
+  <text x="564" y="168" fill="#ddd6fe" font-family="ui-monospace, monospace" font-size="11">External</text>
+  <text x="812" y="168" fill="#ddd6fe" font-family="ui-monospace, monospace" font-size="11">Loeb / ℝ</text>
+  <text x="696" y="324" text-anchor="middle" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="12">*X (Enlarged Base)</text>
+</svg>

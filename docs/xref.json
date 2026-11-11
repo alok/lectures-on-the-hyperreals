@@ -1,0 +1,526 @@
+{"Verso.Genre.Manual.section":
+ {"title": "Sections or chapters of the manual",
+  "description": null,
+  "contents":
+  {"part-5-applications":
+   [{"id": "part-5-applications",
+     "data":
+     {"title": "Part V — Landmark Applications & Reading Guide",
+      "shortTitle": null,
+      "sectionNum": "5.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part V — Landmark Applications & Reading Guide",
+        "shortTitle": null,
+        "number": "5"}]},
+     "address": "/part-5-applications/"}],
+   "part-4-frameworks":
+   [{"id": "part-4-frameworks",
+     "data":
+     {"title": "Part IV — Nonstandard Frameworks, Enlargements & Saturation",
+      "shortTitle": null,
+      "sectionNum": "4.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part IV — Nonstandard Frameworks, Enlargements & Saturation",
+        "shortTitle": null,
+        "number": "4"}]},
+     "address": "/part-4-frameworks/"}],
+   "part-3-internal":
+   [{"id": "part-3-internal",
+     "data":
+     {"title": "Part III — Internal & External Entities",
+      "shortTitle": null,
+      "sectionNum": "3.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part III — Internal & External Entities",
+        "shortTitle": null,
+        "number": "3"}]},
+     "address": "/part-3-internal/"}],
+   "part-2-analysis":
+   [{"id": "part-2-analysis",
+     "data":
+     {"title": "Part II — Elementary Analysis via Infinitesimals",
+      "shortTitle": null,
+      "sectionNum": "2.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part II — Elementary Analysis via Infinitesimals",
+        "shortTitle": null,
+        "number": "2"}]},
+     "address": "/part-2-analysis/"}],
+   "part-1-foundations":
+   [{"id": "part-1-foundations",
+     "data":
+     {"title": "Part I — Foundations of the Hyperreal Line",
+      "shortTitle": null,
+      "sectionNum": "1.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part I — Foundations of the Hyperreal Line",
+        "shortTitle": null,
+        "number": "1"}]},
+     "address": "/part-1-foundations/"}],
+   "lectures-on-the-hyperreals":
+   [{"id": "lectures-on-the-hyperreals",
+     "data":
+     {"title":
+      "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+      "shortTitle": null,
+      "sectionNum": "",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null}]},
+     "address": "/"}],
+   "ch20-notes-and-bibliography":
+   [{"id": "ch20-notes-and-bibliography",
+     "data":
+     {"title": "Chapter 20: Historical Notes, Further Reading & Coverage Map",
+      "shortTitle": null,
+      "sectionNum": "5.5.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part V — Landmark Applications & Reading Guide",
+        "shortTitle": null,
+        "number": "5"},
+       {"title": "Chapter 20: Historical Notes, Further Reading & Coverage Map",
+        "shortTitle": null,
+        "number": "5"}]},
+     "address": "/part-5-applications/ch20-notes-and-bibliography/"}],
+   "ch19-hyperfinite-approximation":
+   [{"id": "ch19-hyperfinite-approximation",
+     "data":
+     {"title":
+      "Chapter 19: Hyperfinite Approximation — Coloring, Stone Duality & Hahn–Banach",
+      "shortTitle": null,
+      "sectionNum": "5.4.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part V — Landmark Applications & Reading Guide",
+        "shortTitle": null,
+        "number": "5"},
+       {"title":
+        "Chapter 19: Hyperfinite Approximation — Coloring, Stone Duality & Hahn–Banach",
+        "shortTitle": null,
+        "number": "4"}]},
+     "address": "/part-5-applications/ch19-hyperfinite-approximation/"}],
+   "ch18-completion":
+   [{"id": "ch18-completion",
+     "data":
+     {"title":
+      "Chapter 18: Completion by Enlargement — Hulls,  <missing> -adics & Power Series",
+      "shortTitle": null,
+      "sectionNum": "5.3.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part V — Landmark Applications & Reading Guide",
+        "shortTitle": null,
+        "number": "5"},
+       {"title":
+        "Chapter 18: Completion by Enlargement — Hulls,  <missing> -adics & Power Series",
+        "shortTitle": null,
+        "number": "3"}]},
+     "address": "/part-5-applications/ch18-completion/"}],
+   "ch17-ramsey":
+   [{"id": "ch17-ramsey",
+     "data":
+     {"title": "Chapter 17: Ramsey Theory & the Paris–Harrington Theorem",
+      "shortTitle": null,
+      "sectionNum": "5.2.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part V — Landmark Applications & Reading Guide",
+        "shortTitle": null,
+        "number": "5"},
+       {"title": "Chapter 17: Ramsey Theory & the Paris–Harrington Theorem",
+        "shortTitle": null,
+        "number": "2"}]},
+     "address": "/part-5-applications/ch17-ramsey/"}],
+   "ch16-loeb-measure":
+   [{"id": "ch16-loeb-measure",
+     "data":
+     {"title":
+      "Chapter 16: Loeb Measure & Lebesgue Measure from Hyperfinite Counting",
+      "shortTitle": null,
+      "sectionNum": "5.1.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part V — Landmark Applications & Reading Guide",
+        "shortTitle": null,
+        "number": "5"},
+       {"title":
+        "Chapter 16: Loeb Measure & Lebesgue Measure from Hyperfinite Counting",
+        "shortTitle": null,
+        "number": "1"}]},
+     "address": "/part-5-applications/ch16-loeb-measure/"}],
+   "ch15-permanence-saturation":
+   [{"id": "ch15-permanence-saturation",
+     "data":
+     {"title":
+      "Chapter 15: Permanence, Robinson's Lemma &  <missing> -Saturation",
+      "shortTitle": null,
+      "sectionNum": "4.3.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part IV — Nonstandard Frameworks, Enlargements & Saturation",
+        "shortTitle": null,
+        "number": "4"},
+       {"title":
+        "Chapter 15: Permanence, Robinson's Lemma &  <missing> -Saturation",
+        "shortTitle": null,
+        "number": "3"}]},
+     "address": "/part-4-frameworks/ch15-permanence-saturation/"}],
+   "ch14-enlargements":
+   [{"id": "ch14-enlargements",
+     "data":
+     {"title": "Chapter 14: Concurrent Relations & Enlargements",
+      "shortTitle": null,
+      "sectionNum": "4.2.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part IV — Nonstandard Frameworks, Enlargements & Saturation",
+        "shortTitle": null,
+        "number": "4"},
+       {"title": "Chapter 14: Concurrent Relations & Enlargements",
+        "shortTitle": null,
+        "number": "2"}]},
+     "address": "/part-4-frameworks/ch14-enlargements/"}],
+   "ch13-superstructures":
+   [{"id": "ch13-superstructures",
+     "data":
+     {"title": "Chapter 13: Zakon Superstructures &  <missing>  Transfer",
+      "shortTitle": null,
+      "sectionNum": "4.1.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part IV — Nonstandard Frameworks, Enlargements & Saturation",
+        "shortTitle": null,
+        "number": "4"},
+       {"title": "Chapter 13: Zakon Superstructures &  <missing>  Transfer",
+        "shortTitle": null,
+        "number": "1"}]},
+     "address": "/part-4-frameworks/ch13-superstructures/"}],
+   "ch12-internal-functions":
+   [{"id": "ch12-internal-functions",
+     "data":
+     {"title": "Chapter 12: Internal Functions, Hyperfinite Sets & Pigeonhole",
+      "shortTitle": null,
+      "sectionNum": "3.2.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part III — Internal & External Entities",
+        "shortTitle": null,
+        "number": "3"},
+       {"title":
+        "Chapter 12: Internal Functions, Hyperfinite Sets & Pigeonhole",
+        "shortTitle": null,
+        "number": "2"}]},
+     "address": "/part-3-internal/ch12-internal-functions/"}],
+   "ch11-internal-sets":
+   [{"id": "ch11-internal-sets",
+     "data":
+     {"title": "Chapter 11: Internal Sets, Overflow & Countable Saturation",
+      "shortTitle": null,
+      "sectionNum": "3.1.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part III — Internal & External Entities",
+        "shortTitle": null,
+        "number": "3"},
+       {"title": "Chapter 11: Internal Sets, Overflow & Countable Saturation",
+        "shortTitle": null,
+        "number": "1"}]},
+     "address": "/part-3-internal/ch11-internal-sets/"}],
+   "ch10-topology":
+   [{"id": "ch10-topology",
+     "data":
+     {"title": "Chapter 10: Robinson's Nonstandard Topology & the S-Topology",
+      "shortTitle": null,
+      "sectionNum": "2.4.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part II — Elementary Analysis via Infinitesimals",
+        "shortTitle": null,
+        "number": "2"},
+       {"title": "Chapter 10: Robinson's Nonstandard Topology & the S-Topology",
+        "shortTitle": null,
+        "number": "4"}]},
+     "address": "/part-2-analysis/ch10-topology/"}],
+   "ch08-09-calculus":
+   [{"id": "ch08-09-calculus",
+     "data":
+     {"title":
+      "Chapters 8 & 9: The Incremental Equation & Hyperfinite Riemann Integrals",
+      "shortTitle": null,
+      "sectionNum": "2.3.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part II — Elementary Analysis via Infinitesimals",
+        "shortTitle": null,
+        "number": "2"},
+       {"title":
+        "Chapters 8 & 9: The Incremental Equation & Hyperfinite Riemann Integrals",
+        "shortTitle": null,
+        "number": "3"}]},
+     "address": "/part-2-analysis/ch08-09-calculus/"}],
+   "ch07-continuity":
+   [{"id": "ch07-continuity",
+     "data":
+     {"title":
+      "Chapter 7: Microcontinuity, Heine–Cantor & Cauchy's 1821 Sum Theorem",
+      "shortTitle": null,
+      "sectionNum": "2.2.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part II — Elementary Analysis via Infinitesimals",
+        "shortTitle": null,
+        "number": "2"},
+       {"title":
+        "Chapter 7: Microcontinuity, Heine–Cantor & Cauchy's 1821 Sum Theorem",
+        "shortTitle": null,
+        "number": "2"}]},
+     "address": "/part-2-analysis/ch07-continuity/"}],
+   "ch06-convergence":
+   [{"id": "ch06-convergence",
+     "data":
+     {"title": "Chapter 6: Sequences, Series & Robinson's Tail Criterion",
+      "shortTitle": null,
+      "sectionNum": "2.1.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part II — Elementary Analysis via Infinitesimals",
+        "shortTitle": null,
+        "number": "2"},
+       {"title": "Chapter 6: Sequences, Series & Robinson's Tail Criterion",
+        "shortTitle": null,
+        "number": "1"}]},
+     "address": "/part-2-analysis/ch06-convergence/"}],
+   "ch05-shadows-and-primes":
+   [{"id": "ch05-shadows-and-primes",
+     "data":
+     {"title":
+      "Chapter 5: Hyperreals Great & Small — Shadows, Quotients & Infinite Primes",
+      "shortTitle": null,
+      "sectionNum": "1.4.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part I — Foundations of the Hyperreal Line",
+        "shortTitle": null,
+        "number": "1"},
+       {"title":
+        "Chapter 5: Hyperreals Great & Small — Shadows, Quotients & Infinite Primes",
+        "shortTitle": null,
+        "number": "4"}]},
+     "address": "/part-1-foundations/ch05-shadows-and-primes/"}],
+   "ch04-transfer-principle":
+   [{"id": "ch04-transfer-principle",
+     "data":
+     {"title": "Chapter 4: Relational Structures & Łoś's Transfer Principle",
+      "shortTitle": null,
+      "sectionNum": "1.3.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part I — Foundations of the Hyperreal Line",
+        "shortTitle": null,
+        "number": "1"},
+       {"title": "Chapter 4: Relational Structures & Łoś's Transfer Principle",
+        "shortTitle": null,
+        "number": "3"}]},
+     "address": "/part-1-foundations/ch04-transfer-principle/"}],
+   "ch02-03-ultrapower":
+   [{"id": "ch02-03-ultrapower",
+     "data":
+     {"title":
+      "Chapters 2 & 3: Large Sets, Ultrafilters & the Ultrapower  <missing>",
+      "shortTitle": null,
+      "sectionNum": "1.2.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part I — Foundations of the Hyperreal Line",
+        "shortTitle": null,
+        "number": "1"},
+       {"title":
+        "Chapters 2 & 3: Large Sets, Ultrafilters & the Ultrapower  <missing>",
+        "shortTitle": null,
+        "number": "2"}]},
+     "address": "/part-1-foundations/ch02-03-ultrapower/"}],
+   "ch01-what-are-the-hyperreals":
+   [{"id": "ch01-what-are-the-hyperreals",
+     "data":
+     {"title": "Chapter 1: What Are the Hyperreals?",
+      "shortTitle": null,
+      "sectionNum": "1.1.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part I — Foundations of the Hyperreal Line",
+        "shortTitle": null,
+        "number": "1"},
+       {"title": "Chapter 1: What Are the Hyperreals?",
+        "shortTitle": null,
+        "number": "1"}]},
+     "address": "/part-1-foundations/ch01-what-are-the-hyperreals/"}],
+   "Lectures-on-the-Hyperreals-___-Interactive-Lean-4-___-Spatial-Edition--Part-I-___-Foundations-of-the-Hyperreal-Line--Chapters-2-___-3___-Large-Sets___-Ultrafilters-___-the-Ultrapower--_LT_missing_GT_--From-Fr___chet___s-Cofinite-Filter-to-a-Free-Ultrafilter":
+   [{"id":
+     "Lectures-on-the-Hyperreals-___-Interactive-Lean-4-___-Spatial-Edition--Part-I-___-Foundations-of-the-Hyperreal-Line--Chapters-2-___-3___-Large-Sets___-Ultrafilters-___-the-Ultrapower--_LT_missing_GT_--From-Fr___chet___s-Cofinite-Filter-to-a-Free-Ultrafilter",
+     "data":
+     {"title": "From Fréchet's Cofinite Filter to a Free Ultrafilter",
+      "shortTitle": null,
+      "sectionNum": "1.2.1.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part I — Foundations of the Hyperreal Line",
+        "shortTitle": null,
+        "number": "1"},
+       {"title":
+        "Chapters 2 & 3: Large Sets, Ultrafilters & the Ultrapower  <missing>",
+        "shortTitle": null,
+        "number": "2"},
+       {"title": "From Fréchet's Cofinite Filter to a Free Ultrafilter",
+        "shortTitle": null,
+        "number": "1"}]},
+     "address": "/part-1-foundations/ch02-03-ultrapower/"}],
+   "Lectures-on-the-Hyperreals-___-Interactive-Lean-4-___-Spatial-Edition--Part-I-___-Foundations-of-the-Hyperreal-Line--Chapter-1___-What-Are-the-Hyperreals___--Field-Agnostic-Infinitesimal-Arithmetic":
+   [{"id":
+     "Lectures-on-the-Hyperreals-___-Interactive-Lean-4-___-Spatial-Edition--Part-I-___-Foundations-of-the-Hyperreal-Line--Chapter-1___-What-Are-the-Hyperreals___--Field-Agnostic-Infinitesimal-Arithmetic",
+     "data":
+     {"title": "Field-Agnostic Infinitesimal Arithmetic",
+      "shortTitle": null,
+      "sectionNum": "1.1.1.",
+      "searchPriority": 50,
+      "context":
+      [{"title":
+        "Lectures on the Hyperreals — Interactive Lean 4 & Spatial Edition",
+        "shortTitle": null,
+        "number": null},
+       {"title": "Part I — Foundations of the Hyperreal Line",
+        "shortTitle": null,
+        "number": "1"},
+       {"title": "Chapter 1: What Are the Hyperreals?",
+        "shortTitle": null,
+        "number": "1"},
+       {"title": "Field-Agnostic Infinitesimal Arithmetic",
+        "shortTitle": null,
+        "number": "1"}]},
+     "address": "/part-1-foundations/ch01-what-are-the-hyperreals/"}]}},
+ "Verso.Genre.Manual.doc.tech":
+ {"title": "Terminology",
+  "description": "Definitions of technical terms",
+  "contents": {}},
+ "Verso.Genre.Manual.doc.tactic.conv":
+ {"title": "Conversion Tactics",
+  "description": "Tactics for performing targeted rewriting of subterms",
+  "contents": {}},
+ "Verso.Genre.Manual.doc.tactic":
+ {"title": "Tactic Documentation",
+  "description": "Detailed descriptions of tactics",
+  "contents": {}},
+ "Verso.Genre.Manual.doc.suggestion":
+ {"title": "Lean constant suggestions",
+  "description": "Search suggestions for Lean constants",
+  "contents": {}},
+ "Verso.Genre.Manual.doc.option":
+ {"title": "Compiler options", "description": null, "contents": {}},
+ "Verso.Genre.Manual.doc":
+ {"title": "Lean constant reference",
+  "description": "Documentation for Lean constants",
+  "contents": {}}}

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400">
+  
+  <defs>
+    <linearGradient id="bgCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="goldBeam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0.06"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.12"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <marker id="arrowSilver" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#cbd5e1"/>
+    </marker>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="400" rx="20" fill="url(#bgCard)"/>
+  <text x="36" y="42" fill="#f8fafc" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Infinitesimal Calculus — Incremental Equation &amp; Hyperfinite Riemann Sums</text>
+  <text x="36" y="66" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="13">Derivatives become exact ratios modulo 𝕀, and definite integrals become shadows of hyperfinite sums</text>
+
+  <!-- Left Panel: Incremental Equation -->
+  <rect x="36" y="88" width="424" height="284" rx="16" fill="#0b1220" stroke="#334155" stroke-width="1.2"/>
+  <text x="56" y="114" fill="#fbbf24" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CH. 8 · INCREMENTAL EQUATION Δf = f'(x)Δx + ηΔx</text>
+
+  <!-- Axes & Curve -->
+  <line x1="74" y1="326" x2="424" y2="326" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="74" y1="326" x2="74" y2="136" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M 96 304 Q 230 282, 378 152" fill="none" stroke="#38bdf8" stroke-width="3"/>
+  <!-- Tangent line from (152, 286) to (352, 200) -->
+  <line x1="152" y1="286" x2="352" y2="200" stroke="#fbbf24" stroke-width="2" stroke-dasharray="6 4"/>
+  <!-- Vertical/horizontal Δx and Δf -->
+  <line x1="152" y1="286" x2="352" y2="286" stroke="#94a3b8" stroke-dasharray="3 3"/>
+  <line x1="352" y1="286" x2="352" y2="173" stroke="#94a3b8" stroke-dasharray="3 3"/>
+  <!-- Braces/segments -->
+  <line x1="360" y1="286" x2="360" y2="200" stroke="#fbbf24" stroke-width="3"/>
+  <text x="372" y="248" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12">f'(x)Δx</text>
+  <line x1="360" y1="200" x2="360" y2="173" stroke="#f472b6" stroke-width="3"/>
+  <text x="372" y="190" fill="#f9a8d4" font-family="ui-monospace, monospace" font-size="12">η·Δx (η ≈ 0)</text>
+
+  <circle cx="152" cy="286" r="5.5" fill="#fbbf24"/>
+  <text x="146" y="308" text-anchor="middle" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12">(x, *f(x))</text>
+  <circle cx="352" cy="173" r="5.5" fill="#38bdf8"/>
+  <text x="252" y="304" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="12">Δx ∈ 𝕀 \ &#123;0&#125;</text>
+  <text x="248" y="352" text-anchor="middle" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="12">sh(Δf / Δx) = sh(f'(x) + η) = f'(x)</text>
+
+  <!-- Right Panel: Shadow Riemann Integral -->
+  <rect x="476" y="88" width="408" height="284" rx="16" fill="#0b1220" stroke="#334155" stroke-width="1.2"/>
+  <text x="496" y="114" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="700">CH. 9 · HYPERFINITE RIEMANN SUM S(f, a, b, dx)</text>
+
+  <line x1="510" y1="322" x2="854" y2="322" stroke="#64748b" stroke-width="1.5"/>
+  <!-- 16 fine Riemann bars -->
+  <rect x="524" y="243" width="17" height="78" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="543" y="226" width="17" height="95" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="562" y="210" width="17" height="111" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="581" y="196" width="17" height="125" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="600" y="183" width="17" height="138" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="619" y="174" width="17" height="147" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="638" y="167" width="17" height="154" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="657" y="164" width="17" height="157" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="676" y="164" width="17" height="157" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="695" y="167" width="17" height="154" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="714" y="174" width="17" height="147" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="733" y="183" width="17" height="138" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="752" y="196" width="17" height="125" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="771" y="210" width="17" height="111" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="790" y="226" width="17" height="95" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/><rect x="809" y="243" width="17" height="78" fill="#38bdf8" fill-opacity="0.26" stroke="#38bdf8" stroke-width="1"/>
+  <path d="M 524 252 Q 676 96, 828 252" fill="none" stroke="#fbbf24" stroke-width="3"/>
+  <text x="524" y="340" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="12">a</text>
+  <text x="828" y="340" text-anchor="middle" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="12">b</text>
+  <text x="676" y="340" text-anchor="middle" fill="#7dd3fc" font-family="ui-monospace, monospace" font-size="11">N = ⌊(b−a)/dx⌋ hyperfinite strips (dx ≈ 0⁺)</text>
+  <text x="676" y="360" text-anchor="middle" fill="#fde68a" font-family="ui-monospace, monospace" font-size="12">∫_a^b f(x) dx = sh( ∑_&#123;k=0&#125;^&#123;N−1&#125; *f(x_k) · dx )</text>
+</svg>
